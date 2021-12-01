@@ -1,0 +1,141 @@
+[root@dcoradbpr01 ~]# df -Ph
+Filesystem                  Size  Used Avail Use% Mounted on
+devtmpfs                     63G     0   63G   0% /dev
+tmpfs                        63G  1.2G   62G   2% /dev/shm
+tmpfs                        63G  2.3G   61G   4% /run
+tmpfs                        63G     0   63G   0% /sys/fs/cgroup
+/dev/mapper/rhel00-root     150G   30G  121G  20% /
+/dev/mapper/rhel00-dump     100G  7.6G   93G   8% /dump
+/dev/sda2                  1014M  270M  745M  27% /boot
+/dev/sda1                   599M  5.8M  594M   1% /boot/efi
+/dev/mapper/rhel01-archive  400G   20G  380G   5% /archive
+/dev/mapper/rhel01-u01      100G   45G   56G  45% /u01
+tmpfs                        13G     0   13G   0% /run/user/54331
+tmpfs                        13G   56K   13G   1% /run/user/1004
+/dev/mapper/rhel02-backup   500G  3.6G  497G   1% /run/media/monitor/beb1f4a7-38a7-4d40-829d-4c6aca4cd1ae
+tmpfs                        13G   36K   13G   1% /run/user/1002
+[root@dcoradbpr01 ~]# su oracle
+[oracle@dcoradbpr01 root]$ . oraenv
+ORACLE_SID = [+ASM1] ? APIMDB1
+ORACLE_HOME = [/home/oracle] ? /u01/app/oracle/product/19.3/dbhome_1
+The Oracle base remains unchanged with value /u01/app/oracle
+[oracle@dcoradbpr01 root]$ echo $ORACLE_BASE
+/u01/app/oracle
+[oracle@dcoradbpr01 root]$ echo $ORACLE_HOME
+/u01/app/oracle/product/19.3/dbhome_1
+[oracle@dcoradbpr01 root]$ echo $PATH
+/home/oracle/.local/bin:/home/oracle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/root/bin:/u01/app/oracle/product/19.3/dbhome_1/bin
+[oracle@dcoradbpr01 root]$ echo $LD_LIBRARY_PATH
+/u01/app/oracle/product/19.3/dbhome_1/lib
+[oracle@dcoradbpr01 root]$ exit
+[root@dcoradbpr01 ~]# su grid
+[grid@dcoradbpr01 root]$ . oraenv
+ORACLE_SID = [+ASM1] ?
+ORACLE_HOME = [/home/oracle] ? /u01/app/19.3/grid
+The Oracle base remains unchanged with value /u01/app/oracle
+[grid@dcoradbpr01 root]$ echo $ORACLE_BASE
+/u01/app/oracle
+[grid@dcoradbpr01 root]$ echo $ORACLE_HOME
+/u01/app/19.3/grid
+
+
+SQL> select banner_full from v$version;
+
+BANNER_FULL
+--------------------------------------------------------------------------------
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.3.0.0.0
+
+
+SQL> select name,log_mode from v$database;
+
+NAME      LOG_MODE
+--------- ------------
+APIMDB    ARCHIVELOG
+
+SQL> select file_name from dba_data_files;
+
+FILE_NAME
+--------------------------------------------------------------------------------
++DATA/APIMDB/DATAFILE/system.257.1085423099
++DATA/APIMDB/DATAFILE/sysaux.258.1085423123
++DATA/APIMDB/DATAFILE/undotbs2.265.1085423355
++DATA/APIMDB/DATAFILE/users.260.1085423139
++DATA/APIMDB/DATAFILE/webmindx.267.1085585805
++DATA/APIMDB/DATAFILE/undotbs1.259.1085423139
++DATA/APIMDB/DATAFILE/webmdata.266.1085585885
++DATA/APIMDB/DATAFILE/webmdata.262.1087573243
++DATA/APIMDB/DATAFILE/webmdata.263.1088078905
++DATA/APIMDB/DATAFILE/webmdatasb.269.1089655523
++DATA/APIMDB/DATAFILE/webmindxsb.270.1089655547
+
+11 rows selected.
+
+SQL> show parameter sga
+
+NAME                                 TYPE        VALUE
+------------------------------------ ----------- ------------------------------
+allow_group_access_to_sga            boolean     FALSE
+lock_sga                             boolean     FALSE
+pre_page_sga                         boolean     TRUE
+sga_max_size                         big integer 30G
+sga_min_size                         big integer 0
+sga_target                           big integer 30G
+unified_audit_sga_queue_size         integer     1048576
+SQL> show parameter pga
+
+NAME                                 TYPE        VALUE
+------------------------------------ ----------- ------------------------------
+pga_aggregate_limit                  big integer 20G
+pga_aggregate_target                 big integer 10G
+SQL> show parameter process
+
+NAME                                 TYPE        VALUE
+------------------------------------ ----------- ------------------------------
+aq_tm_processes                      integer     1
+cell_offload_processing              boolean     TRUE
+db_writer_processes                  integer     2
+gcs_server_processes                 integer     2
+global_txn_processes                 integer     1
+job_queue_processes                  integer     320
+log_archive_max_processes            integer     4
+processes                            integer     1280
+processor_group_name                 string
+SQL>
+SQL>
+SQL> show parameter sessions
+
+NAME                                 TYPE        VALUE
+------------------------------------ ----------- ------------------------------
+java_max_sessionspace_size           integer     0
+java_soft_sessionspace_limit         integer     0
+license_max_sessions                 integer     0
+license_sessions_warning             integer     0
+sessions                             integer     1952
+shared_server_sessions               integer
+SQL> show parameter cursor
+
+NAME                                 TYPE        VALUE
+------------------------------------ ----------- ------------------------------
+cursor_bind_capture_destination      string      memory+disk
+cursor_invalidation                  string      IMMEDIATE
+cursor_sharing                       string      EXACT
+cursor_space_for_time                boolean     FALSE
+open_cursors                         integer     300
+session_cached_cursors               integer     50
+
+
+
+------------------
+
+
+
+[grid@dcoradbnp01 grid]$ ./gridSetup.sh -silent -applyRU /u01/32895426
+Preparing the home to patch...
+Applying the patch /u01/32895426...
+Successfully applied the patch.
+The log can be found at: /tmp/GridSetupActions2021-10-22_04-55-52PM/installerPatchActions_2021-10-22_04-55-52PM.log
+Launching Oracle Grid Infrastructure Setup Wizard...
+
+[FATAL] [INS-40426] Grid installation option has not been specified.
+   ACTION: Specify the valid installation option.

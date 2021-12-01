@@ -1,0 +1,117 @@
+[root@dcoradbpr02 ~]# timedatectl
+               Local time: Tue 2021-11-30 13:26:36 IST
+           Universal time: Tue 2021-11-30 07:56:36 UTC
+                 RTC time: Tue 2021-11-30 07:57:20
+                Time zone: Asia/Kolkata (IST, +0530)
+System clock synchronized: no
+              NTP service: active
+          RTC in local TZ: no
+
+[root@dcoradbpr02 ~]# df -Ph
+Filesystem                  Size  Used Avail Use% Mounted on
+devtmpfs                     63G     0   63G   0% /dev
+tmpfs                        63G  1.2G   62G   2% /dev/shm
+tmpfs                        63G  1.5G   62G   3% /run
+tmpfs                        63G     0   63G   0% /sys/fs/cgroup
+/dev/mapper/rhel00-root     150G   18G  133G  12% /
+/dev/mapper/rhel00-dump     100G  747M  100G   1% /dump
+/dev/sda2                  1014M  334M  681M  33% /boot
+/dev/sda1                   599M  5.8M  594M   1% /boot/efi
+/dev/mapper/rhel01-archive  400G   12G  389G   3% /archive
+/dev/mapper/rhel01-u01      100G   31G   70G  31% /u01
+/dev/mapper/rhel02-backup   500G  3.6G  497G   1% /backup
+tmpfs                        13G     0   13G   0% /run/user/54331
+tmpfs                        13G   44K   13G   1% /run/user/1002
+/dev/loop0                  7.9G  7.9G     0 100% /mnt
+
+
+
+[root@dcoradbpr02 ~]# ssh root@dcoradbpr01
+****************************************************************************************************************************************
+****************************************************************************************************************************************
+*          This system is for the use of authorized users only. Individuals using this computer system without authority,are subject to having all of their activities on this system monitored and recorded by system personnel.
+
+*       In the course of monitoring individuals improperly using this system, or in the course of system maintenance, the activities of authorized users may also be monitored.
+
+*        Anyone using this system expressly consents to such monitoring and is advised that if such monitoring reveals possible evidence of criminal activity, system personnel may provide the evidence of such monitoring to law enforcement officials.
+
+********************************************************************************************************************************************************************************************************************************************************************************
+
+****************************************************************************************************************************************
+****************************************************************************************************************************************
+*          This system is for the use of authorized users only. Individuals using this computer system without authority,are subject to having all of their activities on this system monitored and recorded by system personnel.
+
+*       In the course of monitoring individuals improperly using this system, or in the course of system maintenance, the activities of authorized users may also be monitored.
+
+*        Anyone using this system expressly consents to such monitoring and is advised that if such monitoring reveals possible evidence of criminal activity, system personnel may provide the evidence of such monitoring to law enforcement officials.
+
+********************************************************************************************************************************************************************************************************************************************************************************
+
+Activate the web console with: systemctl enable --now cockpit.socket
+
+This system is not registered to Red Hat Insights. See https://cloud.redhat.com/
+To register this system, run: insights-client --register
+
+Last login: Tue Nov 30 13:27:55 2021
+[root@dcoradbpr01 ~]# logout
+Connection to dcoradbpr01 closed.
+[root@dcoradbpr02 ~]# su oracle
+[oracle@dcoradbpr02 root]$ ssh oracle@dcoradbpr01
+****************************************************************************************************************************************
+****************************************************************************************************************************************
+*          This system is for the use of authorized users only. Individuals using this computer system without authority,are subject to having all of their activities on this system monitored and recorded by system personnel.
+
+*       In the course of monitoring individuals improperly using this system, or in the course of system maintenance, the activities of authorized users may also be monitored.
+
+*        Anyone using this system expressly consents to such monitoring and is advised that if such monitoring reveals possible evidence of criminal activity, system personnel may provide the evidence of such monitoring to law enforcement officials.
+
+********************************************************************************************************************************************************************************************************************************************************************************
+
+****************************************************************************************************************************************
+****************************************************************************************************************************************
+*          This system is for the use of authorized users only. Individuals using this computer system without authority,are subject to having all of their activities on this system monitored and recorded by system personnel.
+
+*       In the course of monitoring individuals improperly using this system, or in the course of system maintenance, the activities of authorized users may also be monitored.
+
+*        Anyone using this system expressly consents to such monitoring and is advised that if such monitoring reveals possible evidence of criminal activity, system personnel may provide the evidence of such monitoring to law enforcement officials.
+
+********************************************************************************************************************************************************************************************************************************************************************************
+
+Activate the web console with: systemctl enable --now cockpit.socket
+
+This system is not registered to Red Hat Insights. See https://cloud.redhat.com/
+To register this system, run: insights-client --register
+
+Last login: Tue Nov 30 13:06:22 2021
+[oracle@dcoradbpr01 ~]$ logout
+Connection to dcoradbpr01 closed.
+[oracle@dcoradbpr02 root]$ exit
+[root@dcoradbpr02 ~]# su grid
+[grid@dcoradbpr02 root]$ ssh grid@dcoradbpr01
+****************************************************************************************************************************************
+****************************************************************************************************************************************
+*          This system is for the use of authorized users only. Individuals using this computer system without authority,are subject to having all of their activities on this system monitored and recorded by system personnel.
+
+*       In the course of monitoring individuals improperly using this system, or in the course of system maintenance, the activities of authorized users may also be monitored.
+
+*        Anyone using this system expressly consents to such monitoring and is advised that if such monitoring reveals possible evidence of criminal activity, system personnel may provide the evidence of such monitoring to law enforcement officials.
+
+********************************************************************************************************************************************************************************************************************************************************************************
+
+****************************************************************************************************************************************
+****************************************************************************************************************************************
+*          This system is for the use of authorized users only. Individuals using this computer system without authority,are subject to having all of their activities on this system monitored and recorded by system personnel.
+
+*       In the course of monitoring individuals improperly using this system, or in the course of system maintenance, the activities of authorized users may also be monitored.
+
+*        Anyone using this system expressly consents to such monitoring and is advised that if such monitoring reveals possible evidence of criminal activity, system personnel may provide the evidence of such monitoring to law enforcement officials.
+
+********************************************************************************************************************************************************************************************************************************************************************************
+
+Activate the web console with: systemctl enable --now cockpit.socket
+
+This system is not registered to Red Hat Insights. See https://cloud.redhat.com/
+To register this system, run: insights-client --register
+
+Last login: Tue Nov 30 13:06:20 2021
+[grid@dcoradbpr01 ~]$
