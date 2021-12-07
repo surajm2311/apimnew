@@ -1,0 +1,13 @@
+--------------------------------------------------------
+--  File created - Friday-July-23-2021   
+--------------------------------------------------------
+--------------------------------------------------------
+--  DDL for Table PAYLOAD_LOG
+--------------------------------------------------------
+
+  CREATE TABLE "SYSTEM"."PAYLOAD_LOG" ("SERVICENAME" VARCHAR2(200), "REQUESTID" VARCHAR2(30), "CONTEXTID" VARCHAR2(40), "REQUESTPAYLOAD" VARCHAR2(2000), "TIMESTAMP" VARCHAR2(30), "RESPONSEPAYLOAD" VARCHAR2(2000), "SECRETKEY" VARCHAR2(100))
+--------------------------------------------------------
+--  Constraints for Table PAYLOAD_LOG
+--------------------------------------------------------
+
+  ALTER TABLE "SYSTEM"."PAYLOAD_LOG" MODIFY ("CONTEXTID" NOT NULL ENABLE)

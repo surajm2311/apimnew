@@ -1,0 +1,14 @@
+--------------------------------------------------------
+--  File created - Friday-July-23-2021   
+--------------------------------------------------------
+--------------------------------------------------------
+--  DDL for Table ERROR_LOG
+--------------------------------------------------------
+
+  CREATE TABLE "SYSTEM"."ERROR_LOG" ("ERRORMESSAGE" VARCHAR2(1000), "CONTEXTID" VARCHAR2(40), "EMAILTIMESTAMP" VARCHAR2(30), "EMAILSENT" VARCHAR2(1), "SERVICENAME" VARCHAR2(100), "ERRORTIMESTAMP" VARCHAR2(30))
+--------------------------------------------------------
+--  Constraints for Table ERROR_LOG
+--------------------------------------------------------
+
+  ALTER TABLE "SYSTEM"."ERROR_LOG" MODIFY ("CONTEXTID" NOT NULL ENABLE)
+  ALTER TABLE "SYSTEM"."ERROR_LOG" MODIFY ("EMAILSENT" NOT NULL ENABLE)
