@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# chkpid.sh
+
+for pidfile in $(find /u01/ -name \*.pid)
+do
+
+   pid=$(cat $pidfile)
+
+
+   ps -p $pid > /dev/null
+
+   ret=$?
+
+
+   if [[ $ret -ne 0 ]]; then
+      echo "#######################"
+      echo " PID: $pid"
+      echo " Pid not found for file:"
+      ls  -ld $pidfile
+      mv $pidfile ${pidfile}.old
+   fi
+done
