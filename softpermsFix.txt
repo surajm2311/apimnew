@@ -1,0 +1,243 @@
+#!/bin/sh
+##-- ------------------------------------------------------------------------
+##-- DISCLAIMER:
+##--    This script is provided for educational purposes only. It is NOT
+##--    supported by Oracle World Wide Technical Support.
+##--    The script has been tested and appears to work as intended.
+##--    You should always run new scripts on a test instance initially.
+##-- ------------------------------------------------------------------------
+##--    softpermsFix.sh Ver 1.0                         ###
+##########################################################
+# Genarate script for correcting the permission of files #
+##########################################################
+
+Heading()
+{
+echo "/** ############################################################################################ 	**/"
+echo "/** ########################     softpermsFix.sh Ver 1.0     ################################### 	**/"
+echo "/** This program works on \"cluvfy comp software -n <node> -allfiles\" command output     	**/"
+echo "/** User need to save above cluvfy output to text file which will be input file to this program  	**/"
+echo "/** Execute CLUVFY on one node at time and need to repeat on all nodes                  		**/"
+echo "/** There will be one script for saving current permissions and three fixup scripts generated 	**/"
+echo "/** then DBA need to run them manually                                                    	**/"
+echo "/** First script \"file_save.sh\" does \"ls -lRt GRID_HOME\" to save current permissions  	**/"
+echo "/** Fixup scripts are  \"file_per_fix.sh\"  \"file_owner_fix.sh\" \"file_group_fix.sh\"       	**/"
+echo "/** ########################################################################################@### 	**/"
+echo ""
+}
+
+########################################################
+# Genarate script for correcting the permission#
+########################################################
+CheckFile_Permission()
+{
+	echo -n "."
+	host=`echo $line |cut -d: -f1`
+	counter=$((counter+1))
+	merge_line=''
+	until [ `echo $line | grep -c "]"` -gt 0 ]
+		do
+			merge_line=`echo "$merge_line" "$line"`
+			FS= read -r line
+	done
+	#Merge Last Line with "]"
+	merge_line=`echo "$merge_line" "$line"`
+
+	file_path=`echo $merge_line|awk '{match($0,/Permissions of file "[[:alnum:]/@/%//*#/._-]*/);A=substr($0,RSTART,RLENGTH);sub(/.*"/,X,A);print A}'`
+	file_per_fix=`echo $merge_line |awk '{match($0,/Expected = "[0-9]+"/);A=substr($0,RSTART,RLENGTH);sub(/.*=/,X,A);print A}'`
+
+	#Trim "" from File Path and Expected Permission Octal
+	file_path=`echo $file_path |sed 's/"//g'`
+	file_per_fix=`echo $file_per_fix |sed 's/"//g'`
+
+        #Replacing %HOST% to node name in the output
+        file_path=`echo $file_path |sed "s/%HOST%/$host/g"`
+
+	#Write commands to output script 	
+	echo "chmod $file_per_fix $file_path" >> file_per_fix.sh
+}
+
+########################################################
+# Genarate script for correcting the owership of files #
+########################################################
+CheckOwnership()
+{
+	echo -n "."
+	host_o=`echo $line |cut -d: -f1`
+	counter_o=$((counter_o+1))
+	merge_line_o=''
+	until [ `echo $line | grep -c "]"` -gt 0 ]
+	do
+		merge_line_o=`echo "$merge_line_o" "$line"`
+		FS= read -r line
+	done
+	
+	#Merge Last Line with "]"
+	merge_line_o=`echo "$merge_line_o" "$line"`
+
+	file_path_o=`echo $merge_line_o|awk '{match($0,/Owner of file "[[:alnum:]/@/%//*#/._-]*/);A=substr($0,RSTART,RLENGTH);sub(/.*"/,X,A);print A}'`
+	file_owner_fix=`echo $merge_line_o |awk '{match($0,/Expected = "[[:alnum:]\(\)_-]*"/);A=substr($0,RSTART,RLENGTH);sub(/.*=/,X,A);print A}'`
+
+	#Trim "" from File Path and correct owner
+	file_path_o=`echo $file_path_o |sed 's/"//g'`
+	file_owner_fix=`echo $file_owner_fix |sed 's/"//g'`
+
+	#Replacing %HOST%
+	file_path_o=`echo $file_path_o |sed "s/%HOST%/$host_o/g"`
+	
+	#Write commands to output script 	
+	echo "chown $file_owner_fix $file_path_o" >> file_owner_fix.sh
+}
+
+#####################################################
+# Genarate script for correcting the group of files #
+#####################################################
+CheckGroup()
+{
+	echo -n "."
+	host_g=`echo $line |cut -d: -f1`
+	counter_g=$((counter_g+1))
+	merge_line_g=''
+	until [ `echo $line | grep -c "]"` -gt 0 ]
+	do
+		merge_line_g=`echo "$merge_line_g" "$line"`
+		FS= read -r line
+	done
+	
+	#Merge Last Line with "]"
+	merge_line_g=`echo "$merge_line_g" "$line"`
+
+	file_path_g=`echo $merge_line_g|awk '{match($0,/Group of file "[[:alnum:]/@/%//*#/._-]*/);A=substr($0,RSTART,RLENGTH);sub(/.*"/,X,A);print A}'`
+	file_group_fix=`echo $merge_line_g |awk '{match($0,/Expected = "[[:alnum:]\(\)_-]*"/);A=substr($0,RSTART,RLENGTH);sub(/.*=/,X,A);print A}'`
+
+	#Trim "" from File Path and correct group
+	file_path_g=`echo $file_path_g |sed 's/"//g'`
+	file_group_fix=`echo $file_group_fix |sed 's/"//g'`
+
+	#Replacing %HOST%
+	file_path_g=`echo $file_path_g |sed "s/%HOST%/$host_g/g"`
+    
+        #Write commands to output script 	
+	echo "chgrp $file_group_fix $file_path_g" >> file_group_fix.sh
+}
+
+##########################################################
+# Genarate script for saving  ls -lRt on current GI_HOME #
+##########################################################
+GenerateSaveScript()
+{
+	echo "####**************************************** *****************************"\"  >> file_save.sh
+	echo "#This script is to save ls -lRt from GRID_HOME before correcting permission"  >> file_save.sh
+	echo "####**************************************** *****************************"\"  >> file_save.sh
+	echo "echo -n > file_save.lst" >> file_save.sh
+	echo "echo -n "Enter GRID_HOME complete path :"" >> file_save.sh
+	echo "read gihome" >> file_save.sh
+	echo "if [ -d ""\$gihome"" ]" >> file_save.sh
+	echo "then" >> file_save.sh
+	echo "echo \"Saving GRID_HOME file permissions to file_save.lst\"" >> file_save.sh
+	echo "echo \""\"  >> file_save.sh
+	echo "echo \"ls -lRt ""\$gihome"""\"  >> file_save.sh
+	echo "echo \"This may take several minitues. Warning: There may be large number of audit or client files\""  >> file_save.sh
+	echo "        echo \"*****************************"\"  >> file_save.sh
+	echo "echo \""\"  >> file_save.sh
+	echo "ls -lRt ""\$gihome"" >> file_save.lst"  >> file_save.sh
+	echo "echo \"File "file_save.lst" is created with all GI_HOME files permission\""  >> file_save.sh
+	echo "else" >> file_save.sh
+	echo "        echo """ >> file_save.sh
+	echo "        echo \"Directory :$gihome"" Not Found\"" >> file_save.sh
+	echo "        echo \"Exiting..\"" >> file_save.sh
+	echo "        exit" >> file_save.sh
+	echo "fi" >>file_save.sh
+}
+
+########################################
+#//////////***   MAIN ***//////////////# 
+########################################
+tput clear
+node=`hostname`
+
+##Calling heading
+Heading
+
+#Checking argument
+if [ -z "$1" ]; then
+#------------Screen Input -----------
+echo "Please Input the complete path of redirected result file of command \"cluvfy comp software -n <node> -allfiles\" :"
+read input
+
+else
+        #------------cluvfy file as argument -----------
+        input=$1
+        echo "Program Input File : $input"
+        echo "Please check the heading. Input file should be text file of \"cluvfy comp software -n <node> -allfiles\" command result"
+        echo -n "Enter y or any other key to exit :"
+        read key
+        if  [ "$key" != "y" ] || [ "$key" == "Y" ]
+        then
+                echo $key
+                echo "Exiting"
+                exit 1
+        fi
+fi
+
+#Checking file exists
+if [ -f "$input" ]
+then
+	echo ""
+else
+	echo ""
+	echo "File :$input"" Not Found"
+        echo "Exiting.."
+	exit
+fi
+
+#Zero out output script files
+echo "Emptying output files"
+echo -n > file_save.sh
+echo -n > file_per_fix.sh
+echo -n > file_owner_fix.sh
+echo -n > file_group_fix.sh
+
+#Description for script
+echo  "#Script for fixing file permission" > file_per_fix.sh
+echo  "#Script for fixing file ownership" > file_owner_fix.sh
+echo  "#Script for fixing file group" > file_group_fix.sh
+
+echo -n "Processing file records"
+#Loop reading each lines
+while IFS= read -r line
+do
+	if [ `echo $line | grep -c "PRVG-2033 : Permissions of file"` -gt 0 ]
+	then
+		CheckFile_Permission
+	fi
+	if [ `echo $line | grep -c "PRVG-2031 : Owner of file "` -gt 0 ]
+	then
+		CheckOwnership
+	fi
+	if [ `echo $line | grep -c "PRVG-2032 : Group of file"` -gt 0 ]
+	then
+		CheckGroup
+	fi
+done < "$input"
+
+#Generating GI_HOME saving script
+GenerateSaveScript 
+
+#Set execute permission
+chmod u+x file_save.sh
+chmod u+x file_per_fix.sh
+chmod u+x file_owner_fix.sh
+chmod u+x file_group_fix.sh
+
+########****************** Screen Output ***********************#
+echo ""
+echo "Records Processed for File Permission issue : $counter"
+echo "Records Processed for Ownership issue : $counter_o"
+echo "Records Processed for Group issue : $counter_g"
+echo "Host = "$host""
+echo "Please execute the script for savng current GI_HOME permissions if Live system \"file_save.sh\""
+echo "Please execute the script for fixing the permission \"file_per_fix.sh\""
+echo "Please execute the script for fixing the ownership \"file_owner_fix.sh\""
+echo "Please execute the script for fixing the group \"file_group_fix.sh\""
+###  *********END **************###########
