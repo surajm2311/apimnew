@@ -1,0 +1,149 @@
+Last login: Thu Dec 23 20:40:46 2021
+[root@dcoradbnp02 ~]# echo $PATH
+/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/root/bin
+[root@dcoradbnp02 ~]#
+[root@dcoradbnp02 ~]#
+[root@dcoradbnp02 ~]# export PATH=$PATH:/u01/app/oracle/product/19.3/dbhome_1/OPatch
+[root@dcoradbnp02 ~]# export CV_ASSUME_DISTID=OEL8.1
+[root@dcoradbnp02 ~]# echo $PATH
+/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/root/bin:/u01/app/oracle/product/19.3/dbhome_1/OPatch
+[root@dcoradbnp02 ~]# opatchauto apply /u01/psu_patch/33248471/33182768 -oh /u01/app/oracle/product/19.3/dbhome_1
+
+OPatchauto session is initiated at Thu Dec 23 20:49:01 2021
+
+System initialization log file is /u01/app/oracle/product/19.3/dbhome_1/cfgtoollogs/opatchautodb/systemconfig2021-12-23_08-49-07PM.log.
+
+Session log file is /u01/app/oracle/product/19.3/dbhome_1/cfgtoollogs/opatchauto/opatchauto2021-12-23_08-49-26PM.log
+The id for this session is TTP7
+
+Executing OPatch prereq operations to verify patch applicability on home /u01/app/oracle/product/19.3/dbhome_1
+Patch applicability verified successfully on home /u01/app/oracle/product/19.3/dbhome_1
+
+
+Executing patch validation checks on home /u01/app/oracle/product/19.3/dbhome_1
+Patch validation checks successfully completed on home /u01/app/oracle/product/19.3/dbhome_1
+
+
+Verifying SQL patch applicability on home /u01/app/oracle/product/19.3/dbhome_1
+SQL patch applicability verified successfully on home /u01/app/oracle/product/19.3/dbhome_1
+
+
+Preparing to bring down database service on home /u01/app/oracle/product/19.3/dbhome_1
+Successfully prepared home /u01/app/oracle/product/19.3/dbhome_1 to bring down database service
+
+
+Bringing down database service on home /u01/app/oracle/product/19.3/dbhome_1
+Following database(s) and/or service(s) are stopped and will be restarted later during the session: apimuat
+Database service successfully brought down on home /u01/app/oracle/product/19.3/dbhome_1
+
+
+Performing prepatch operation on home /u01/app/oracle/product/19.3/dbhome_1
+Perpatch operation completed successfully on home /u01/app/oracle/product/19.3/dbhome_1
+
+
+Start applying binary patch on home /u01/app/oracle/product/19.3/dbhome_1
+Failed while applying binary patches on home /u01/app/oracle/product/19.3/dbhome_1
+
+Execution of [OPatchAutoBinaryAction] patch action failed, check log for more details. Failures:
+Patch Target : dcoradbnp02->/u01/app/oracle/product/19.3/dbhome_1 Type[rac]
+Details: [
+---------------------------Patching Failed---------------------------------
+Command execution failed during patching in home: /u01/app/oracle/product/19.3/dbhome_1, host: dcoradbnp02.
+Command failed:  /u01/app/oracle/product/19.3/dbhome_1/OPatch/opatchauto  apply /u01/psu_patch/33248471/33182768 -oh /u01/app/oracle/product/19.3/dbhome_1 -target_type rac_database -binary -invPtrLoc /u01/app/oracle/product/19.3/dbhome_1/oraInst.loc -jre /u01/app/oracle/product/19.3/dbhome_1/OPatch/jre -persistresult /u01/app/oracle/product/19.3/dbhome_1/opatchautocfg/db/sessioninfo/sessionresult_dcoradbnp02_rac_2.ser -analyzedresult /u01/app/oracle/product/19.3/dbhome_1/opatchautocfg/db/sessioninfo/sessionresult_analyze_dcoradbnp02_rac_2.ser
+Command failure output:
+==Following patches FAILED in apply:
+
+Patch: /u01/psu_patch/33248471/33182768/33192793
+Log: /u01/app/oracle/product/19.3/dbhome_1/cfgtoollogs/opatchauto/core/opatch/opatch2021-12-23_20-51-57PM_1.log
+Reason: Failed during Patching: oracle.opatch.opatchsdk.OPatchException: ApplySession failed in system modification phase... 'ApplySession::apply failed: java.io.IOException: oracle.sysman.oui.patch.PatchException: java.io.FileNotFoundException: /u01/app/oraInventory/ContentsXML/oui-patch.xml (Permission denied)'
+
+After fixing the cause of failure Run opatchauto resume
+
+]
+OPATCHAUTO-68061: The orchestration engine failed.
+OPATCHAUTO-68061: The orchestration engine failed with return code 1
+OPATCHAUTO-68061: Check the log for more details.
+OPatchAuto failed.
+
+OPatchauto session completed at Thu Dec 23 21:00:17 2021
+Time taken to complete the session 11 minutes, 17 seconds
+
+ opatchauto failed with error code 42
+[root@dcoradbnp02 ~]# cd /u01/app/oraInventory/ContentsXML/
+[root@dcoradbnp02 ContentsXML]# ls -lrth
+total 20K
+-rw-rw----. 1 grid   oinstall 557 Oct 22 22:25 inventory.xml
+-rw-r--r--. 1 oracle oinstall 174 Dec 23 20:36 oui-patch.xml.back
+-rw-r--r--. 1 grid   oinstall 174 Dec 23 20:36 oui-patch.xml
+-rw-rw----. 1 grid   oinstall 292 Dec 23 20:36 libs.xml
+-rw-rw----. 1 grid   oinstall 300 Dec 23 20:36 comps.xml
+[root@dcoradbnp02 ContentsXML]# chmod
+
+
+---------------error 2
+Activate the web console with: systemctl enable --now cockpit.socket
+
+This system is not registered to Red Hat Insights. See https://cloud.redhat.com/
+To register this system, run: insights-client --register
+
+Last login: Thu Dec 23 21:15:07 2021
+[root@dcoradbnp02 ~]#  export PATH=$PATH:/u01/app/oracle/product/19.3/dbhome_1/OPatch
+[root@dcoradbnp02 ~]# export CV_ASSUME_DISTID=OEL8.1
+[root@dcoradbnp02 ~]# echo $PATH
+/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/root/bin:/u01/app/oracle/product/19.3/dbhome_1/OPatch
+[root@dcoradbnp02 ~]# opatchauto apply /u01/psu_patch/33248471/33182768 -oh /u01/app/oracle/product/19.3/dbhome_1
+
+OPatchauto session is initiated at Thu Dec 23 21:28:06 2021
+
+System initialization log file is /u01/app/oracle/product/19.3/dbhome_1/cfgtoollogs/opatchautodb/systemconfig2021-12-23_09-28-09PM.log.
+
+Session log file is /u01/app/oracle/product/19.3/dbhome_1/cfgtoollogs/opatchauto/opatchauto2021-12-23_09-28-26PM.log
+The id for this session is KUB7
+
+Executing OPatch prereq operations to verify patch applicability on home /u01/app/oracle/product/19.3/dbhome_1
+Patch applicability verification failed on home /u01/app/oracle/product/19.3/dbhome_1
+
+Execution of [OPatchAutoBinaryAction] patch action failed, check log for more details. Failures:
+Patch Target : dcoradbnp02->/u01/app/oracle/product/19.3/dbhome_1 Type[rac]
+Details: [
+---------------------------Patching Failed---------------------------------
+Command execution failed during patching in home: /u01/app/oracle/product/19.3/dbhome_1, host: dcoradbnp02.
+Command failed:  /u01/app/oracle/product/19.3/dbhome_1/OPatch/opatchauto  apply /u01/psu_patch/33248471/33182768 -oh /u01/app/oracle/product/19.3/dbhome_1 -target_type rac_database -binary -invPtrLoc /u01/app/oracle/product/19.3/dbhome_1/oraInst.loc -jre /u01/app/oracle/product/19.3/dbhome_1/OPatch/jre -persistresult /u01/app/oracle/product/19.3/dbhome_1/opatchautocfg/db/sessioninfo/sessionresult_analyze_dcoradbnp02_rac_2.ser -analyze -online -prepare_home
+Command failure output:
+==Following patches FAILED in analysis for apply:
+
+Patch: /u01/psu_patch/33248471/33182768/33208123
+Log: /u01/app/oracle/product/19.3/dbhome_1/cfgtoollogs/opatchauto/core/opatch/opatch2021-12-23_21-28-39PM_1.log
+Reason: Failed during Analysis: /u01/psu_patch/33248471/33182768/33208123 is not applicable to the oracle home /u01/app/oracle/product/19.3/dbhome_1
+
+Patch: /u01/psu_patch/33248471/33182768/33192793
+Log: /u01/app/oracle/product/19.3/dbhome_1/cfgtoollogs/opatchauto/core/opatch/opatch2021-12-23_21-28-39PM_1.log
+Reason: Failed during Analysis: /u01/psu_patch/33248471/33182768/33192793 is not applicable to the oracle home /u01/app/oracle/product/19.3/dbhome_1
+
+After fixing the cause of failure Run opatchauto resume
+
+]
+OPATCHAUTO-68061: The orchestration engine failed.
+OPATCHAUTO-68061: The orchestration engine failed with return code 1
+OPATCHAUTO-68061: Check the log for more details.
+OPatchAuto failed.
+
+OPatchauto session completed at Thu Dec 23 21:28:44 2021
+Time taken to complete the session 0 minute, 38 seconds
+
+ opatchauto failed with error code 42
+[root@dcoradbnp02 ~]#
+
+
+
+------040122----
+
+[oracle@dcoradbnp02 OPatch]$ ./opatch lspatches
+Inventory load failed... LsPatchesSession::loadAndPrintInstalledPatch()
+LsPatchesSession failed: Unable to create patchObject
+Possible causes are:
+   ORACLE_HOME/inventory/oneoffs/33192793 is corrupted. PatchObject constructor: Input file "/u01/app/oracle/product/19.3/dbhome_1/inventory/oneoffs/33192793/etc/config/actions" or "/u01/app/oracle/product/19.3/dbhome_1/inventory/oneoffs/33192793/etc/config/inventory" does not exist.
+
+
+OPatch failed with error code 2
+[oracle@dcoradbnp02 OPatch]$
