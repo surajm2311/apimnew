@@ -1,0 +1,17 @@
+
+Hi Dhananjay,
+
+This is after we had tried deconfig and reconfig , we were getting permission issue. Following have resolved that.
+
+1)  Issue was when root.sh being run on node1 it fails to copy few files to /u01/app/oracle/crsdata/. due to permission issue on both Nodes.
+2)  Identified issue that the owner of this directory was changed to oracle:oinstall with recursive option.
+3)  Fixed the permission issue on node 2 issue by manually changing owner as per the working node.
+4)  Ran the root.sh script from node 1.
+5)  This time it ran without any permission errors but in step 16 it failed to start evmd and other resources.
+6)  Did a clean reboot after disabling cluster startup.
+7)  Executed the root.sh script from node 1.
+8) It again failed to start evmd and other resources.
+9) We clean up all files present at path /u01/app/oracle/crsdata/droradbdr01/output  on Node 1.  Executed the root.sh script from node 1
+10) Actual issue resolved after step no 9. However ,CRS services failed due to a voting disk discovery error.
+11) Oracle support asked to provide logs for step # 9 issue.
+12) We have uploaded the log files as required.
