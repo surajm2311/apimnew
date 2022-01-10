@@ -1,0 +1,390 @@
+=======================Cluvfy post crs result Node 1=============================================
+
+[grid@droradbdr01 bin]$ ./cluvfy stage -post crsinst -n droradbdr01,droradbdr02 -verbose
+
+Verifying Node Connectivity ...
+  Verifying Hosts File ...
+  Node Name                             Status
+  ------------------------------------  ------------------------
+  droradbdr01                           passed
+  Verifying Hosts File ...PASSED
+
+Interface information for node "droradbdr01"
+
+ Name   IP Address      Subnet          Gateway         Def. Gateway    HW Address        MTU
+ ------ --------------- --------------- --------------- --------------- ----------------- ------
+ eno5   10.172.19.234   10.172.16.0     0.0.0.0         10.172.16.5     94:40:C9:FD:3A:30 1500
+ eno6   10.172.19.201   10.172.16.0     0.0.0.0         10.172.16.5     94:40:C9:FD:3A:32 1500
+ eno7   10.172.19.199   10.172.16.0     0.0.0.0         10.172.16.5     94:40:C9:FD:3A:34 1500
+ eno8   10.172.16.138   10.172.16.0     0.0.0.0         10.172.16.5     94:40:C9:FD:3A:36 1500
+ eno8   169.254.21.255  169.254.0.0     0.0.0.0         10.172.16.5     94:40:C9:FD:3A:36 1500
+
+Check: MTU consistency of the subnet "10.172.16.0".
+
+  Node              Name          IP Address    Subnet        MTU
+  ----------------  ------------  ------------  ------------  ----------------
+  droradbdr01       eno5          10.172.19.234  10.172.16.0   1500
+  droradbdr01       eno6          10.172.19.201  10.172.16.0   1500
+  droradbdr01       eno7          10.172.19.199  10.172.16.0   1500
+  droradbdr01       eno8          10.172.16.138  10.172.16.0   1500
+
+Check: MTU consistency of the subnet "169.254.0.0".
+
+  Node              Name          IP Address    Subnet        MTU
+  ----------------  ------------  ------------  ------------  ----------------
+  droradbdr01       eno8          169.254.21.255  169.254.0.0   1500
+  Verifying Check that maximum (MTU) size packet goes through subnet ...PASSED
+
+  Source                          Destination                     Connected?
+  ------------------------------  ------------------------------  ----------------
+  droradbdr01[eno5:10.172.19.234]  droradbdr01[eno6:10.172.19.201]  yes
+  droradbdr01[eno5:10.172.19.234]  droradbdr01[eno7:10.172.19.199]  yes
+  droradbdr01[eno5:10.172.19.234]  droradbdr01[eno8:10.172.16.138]  yes
+  droradbdr01[eno6:10.172.19.201]  droradbdr01[eno7:10.172.19.199]  yes
+  droradbdr01[eno6:10.172.19.201]  droradbdr01[eno8:10.172.16.138]  yes
+  droradbdr01[eno7:10.172.19.199]  droradbdr01[eno8:10.172.16.138]  yes
+Verifying Node Connectivity ...PASSED
+Verifying Multicast or broadcast check ...
+Checking subnet "10.172.16.0" for multicast communication with multicast group "224.0.0.251"
+Verifying Multicast or broadcast check ...PASSED
+Verifying Time zone consistency ...PASSED
+Verifying Cluster Manager Integrity ...FAILED (PRVF-5434)
+Verifying User Mask ...
+  Node Name     Available                 Required                  Comment
+  ------------  ------------------------  ------------------------  ----------
+  droradbdr01   0022                      0022                      passed
+Verifying User Mask ...PASSED
+Verifying Cluster Integrity ...
+  Node Name
+  ------------------------------------
+  droradbdr01
+Verifying Cluster Integrity ...PASSED
+Verifying OCR Integrity ...FAILED (PRVG-6016, PRVG-2043, PROT-4, PROC-26, PRVG-2071, PRVG-0551)
+Verifying CRS Integrity ...
+  Verifying Clusterware Version Consistency ...PASSED
+Verifying CRS Integrity ...FAILED (PRCR-1115)
+Verifying Node Application Existence ...
+
+Checking existence of VIP node application (required)
+
+  Node Name     Required                  Running?                  Comment
+  ------------  ------------------------  ------------------------  ----------
+  droradbdr01   yes                       no                        does not exist
+
+
+Checking existence of NETWORK node application (required)
+
+  Node Name     Required                  Running?                  Comment
+  ------------  ------------------------  ------------------------  ----------
+  droradbdr01   yes                       no                        does not exist
+
+
+Checking existence of ONS node application (optional)
+
+  Node Name     Required                  Running?                  Comment
+  ------------  ------------------------  ------------------------  ----------
+  droradbdr01   no                        no                        does not exist
+Verifying Node Application Existence ...FAILED (PRVF-4555)
+Verifying Single Client Access Name (SCAN) ...FAILED (PRVF-5054, PRCR-1068, PRVF-5053)
+Verifying OLR Integrity ...PASSED
+Verifying Voting Disk ...WARNING (PRVF-5430)
+Verifying ASM Integrity ...FAILED (PRVF-5109, PRVG-1008, PRCR-1070)
+Verifying User Not In Group "root": grid ...
+  Node Name     Status                    Comment
+  ------------  ------------------------  ------------------------
+  droradbdr01   passed                    does not exist
+Verifying User Not In Group "root": grid ...PASSED
+Verifying Clock Synchronization ...
+  Node Name                             Status
+  ------------------------------------  ------------------------
+  droradbdr01                           passed
+
+  Node Name                             State
+  ------------------------------------  ------------------------
+  droradbdr01                           Observer
+
+CTSS is in Observer state. Switching over to clock synchronization checks using NTP
+
+  Verifying Network Time Protocol (NTP) ...
+    Verifying '/etc/chrony.conf' ...
+    Node Name                             File exists?
+    ------------------------------------  ------------------------
+    droradbdr01                           yes
+
+    Verifying '/etc/chrony.conf' ...PASSED
+    Verifying Daemon 'chronyd' ...
+    Node Name                             Running?
+    ------------------------------------  ------------------------
+    droradbdr01                           yes
+
+    Verifying Daemon 'chronyd' ...PASSED
+    Verifying NTP daemon or service using UDP port 123 ...
+    Node Name                             Port Open?
+    ------------------------------------  ------------------------
+    droradbdr01                           yes
+
+    Verifying NTP daemon or service using UDP port 123 ...PASSED
+    Verifying chrony daemon is synchronized with at least one external time source ...PASSED
+  Verifying Network Time Protocol (NTP) ...PASSED
+Verifying Clock Synchronization ...PASSED
+Verifying File system mount options for path GI_HOME ...FAILED (PRVE-0007)
+Verifying Access control attributes for /var/tmp/.oracle ...FAILED (PRVE-0007)
+Verifying Access control attributes for %OCRCONFIGDIR%/maps ...FAILED (PRVE-0007)
+
+Post-check for cluster services setup was unsuccessful on all the nodes.
+
+
+Failures were encountered during execution of CVU verification request "stage -post crsinst".
+
+Verifying Cluster Manager Integrity ...FAILED
+Cluster manager integrity check failed
+PRVF-5434 : Cannot identify the current CRS software version
+
+Verifying OCR Integrity ...FAILED
+PRVG-6016 : Failed to retrieve the OCR backup location from node "droradbdr01".
+Command "/u01/app/19.3/grid/bin/ocrconfig -showbackuploc" failed with errors.
+PRVG-2043 : Command "/u01/app/19.3/grid/bin/ocrconfig -showbackuploc " failed
+on node "droradbdr01" and produced the following output:
+PROT-4: Failed to retrieve data from the cluster registry
+PROC-26: Error while accessing the physical storage Storage layer error
+[Insufficient quorum to open OCR devices] [0]
+
+droradbdr01: PRVG-2071 : Disk group for ocr location "+CRS" is not available on
+             "droradbdr01"
+droradbdr01: PRVG-2043 : Command "/u01/app/19.3/grid/bin/ocrconfig
+             -showbackuploc " failed on node "droradbdr01" and produced the
+             following output:
+             PROT-4: Failed to retrieve data from the cluster registry
+             PROC-26: Error while accessing the physical storage Storage layer
+             error [Insufficient quorum to open OCR devices] [0]
+
+droradbdr01: PRVG-0551 : The OCR key "SYSTEM.version.activeversion" was not
+             found in OCR
+
+Refer to My Oracle Support notes "2348500.1" for more details regarding errors
+PRVG-2071".
+
+Verifying CRS Integrity ...FAILED
+PRCR-1115 : Failed to find entities of type server that match filters null and
+contain attributes NAME,STATE
+CRS-0184 : Cannot communicate with the CRS daemon.
+
+Verifying Node Application Existence ...FAILED
+droradbdr01: PRVF-4555 : Node application "ora.droradbdr01.vip" does not exist
+             on node "droradbdr01"
+droradbdr01: PRVF-4555 : Node application "ora.net1.network" does not exist on
+             node "droradbdr01"
+
+Verifying Single Client Access Name (SCAN) ...FAILED
+droradbdr01: PRVF-5054 : Verification of SCAN VIP and listener setup failed
+             PRCR-1068 : Failed to query resources
+             CRS-0184 : Cannot communicate with the CRS daemon.
+droradbdr01: PRVF-5053 : No SCAN VIP found
+
+Verifying Voting Disk ...WARNING
+PRVF-5430 : Voting disk configuration does not meet Oracle's recommendation of
+three voting disk locations
+
+Verifying ASM Integrity ...FAILED
+PRVF-5109 : ASM Running check failed. ASM is not running on all specified nodes
+
+droradbdr01: PRVG-1008 : ASM status could not be verified on nodes
+             "droradbdr01"
+             PRCR-1070 : Failed to check if resource ora.asm is registered
+             CRS-0184 : Cannot communicate with the CRS daemon.
+
+Verifying File system mount options for path GI_HOME ...FAILED
+droradbdr01: PRVE-0007 : Could not find executable
+             "/tmp/CVU_19.0.0.0.0_grid/checkFSMountOptions.sh"
+
+Verifying Access control attributes for /var/tmp/.oracle ...FAILED
+droradbdr01: PRVE-0007 : Could not find executable
+             "/tmp/CVU_19.0.0.0.0_grid/check_path_acl_attributes.sh"
+
+Verifying Access control attributes for %OCRCONFIGDIR%/maps ...FAILED
+droradbdr01: PRVE-0007 : Could not find executable
+             "/tmp/CVU_19.0.0.0.0_grid/check_path_acl_attributes.sh"
+
+
+CVU operation performed:      stage -post crsinst
+Date:                         10 Jan, 2022 1:21:14 PM
+CVU home:                     /u01/app/19.3/grid/
+User:                         grid
+
+
+=======================Cluvfy post crs result Node 2=============================================
+
+[grid@droradbdr02 bin]$ ./cluvfy stage -post crsinst -n droradbdr01,droradbdr02 -verbose
+
+Verifying Node Connectivity ...
+  Verifying Hosts File ...
+  Node Name                             Status
+  ------------------------------------  ------------------------
+  droradbdr02                           passed
+  Verifying Hosts File ...PASSED
+
+Interface information for node "droradbdr02"
+
+ Name   IP Address      Subnet          Gateway         Def. Gateway    HW Address        MTU
+ ------ --------------- --------------- --------------- --------------- ----------------- ------
+ eno8   10.172.16.139   10.172.16.0     0.0.0.0         10.172.16.5     94:40:C9:FD:39:76 1500
+
+Check: MTU consistency on the private interfaces of subnet "10.172.16.0"
+
+  Node              Name          IP Address    Subnet        MTU
+  ----------------  ------------  ------------  ------------  ----------------
+  droradbdr02       eno8          10.172.16.139  10.172.16.0   1500
+  Verifying Check that maximum (MTU) size packet goes through subnet ...PASSED
+Verifying Node Connectivity ...PASSED
+Verifying Multicast or broadcast check ...
+Checking subnet "10.172.16.0" for multicast communication with multicast group "224.0.0.251"
+Verifying Multicast or broadcast check ...PASSED
+Verifying Time zone consistency ...PASSED
+Verifying Cluster Manager Integrity ...
+  Node Name                             Status
+  ------------------------------------  ------------------------
+  droradbdr02                           running
+Verifying Cluster Manager Integrity ...PASSED
+Verifying User Mask ...
+  Node Name     Available                 Required                  Comment
+  ------------  ------------------------  ------------------------  ----------
+  droradbdr02   0022                      0022                      passed
+Verifying User Mask ...PASSED
+Verifying Cluster Integrity ...
+  Node Name
+  ------------------------------------
+  droradbdr02
+Verifying Cluster Integrity ...PASSED
+Verifying OCR Integrity ...WARNING (PRVG-6017)
+Verifying CRS Integrity ...
+  Verifying Clusterware Version Consistency ...PASSED
+Verifying CRS Integrity ...PASSED
+Verifying Node Application Existence ...
+
+Checking existence of VIP node application (required)
+
+  Node Name     Required                  Running?                  Comment
+  ------------  ------------------------  ------------------------  ----------
+  droradbdr02   yes                       yes                       passed
+
+
+Checking existence of NETWORK node application (required)
+
+  Node Name     Required                  Running?                  Comment
+  ------------  ------------------------  ------------------------  ----------
+  droradbdr02   yes                       yes                       passed
+
+
+Checking existence of ONS node application (optional)
+
+  Node Name     Required                  Running?                  Comment
+  ------------  ------------------------  ------------------------  ----------
+  droradbdr02   no                        yes                       passed
+Verifying Node Application Existence ...PASSED
+Verifying Single Client Access Name (SCAN) ...
+  SCAN Name         Node          Running?      ListenerName  Port          Running?
+  ----------------  ------------  ------------  ------------  ------------  ------------
+  droradbprscan.idbibank.com  droradbdr02   true          LISTENER_SCAN1  15210         true
+  droradbprscan.idbibank.com  droradbdr02   true          LISTENER_SCAN2  15210         true
+  droradbprscan.idbibank.com  droradbdr02   true          LISTENER_SCAN3  15210         true
+
+Checking TCP connectivity to SCAN listeners...
+
+  Node          ListenerName              TCP connectivity?
+  ------------  ------------------------  ------------------------
+  droradbdr02   LISTENER_SCAN1            yes
+  droradbdr02   LISTENER_SCAN2            yes
+  droradbdr02   LISTENER_SCAN3            yes
+
+  Verifying DNS/NIS name service 'droradbprscan.idbibank.com' ...
+    Verifying Name Service Switch Configuration File Integrity ...PASSED
+
+  SCAN Name     IP Address                Status                    Comment
+  ------------  ------------------------  ------------------------  ----------
+  droradbprscan.idbibank.com  10.172.19.195             passed
+  droradbprscan.idbibank.com  10.172.19.194             passed
+  droradbprscan.idbibank.com  10.172.19.193             passed
+  Verifying DNS/NIS name service 'droradbprscan.idbibank.com' ...PASSED
+Verifying Single Client Access Name (SCAN) ...PASSED
+Verifying OLR Integrity ...FAILED (PRVG-2031)
+Verifying Voting Disk ...PASSED
+Verifying ASM Integrity ...PASSED
+Verifying ASM disk group free space ...PASSED
+Verifying User Not In Group "root": grid ...
+  Node Name     Status                    Comment
+  ------------  ------------------------  ------------------------
+  droradbdr02   passed                    does not exist
+Verifying User Not In Group "root": grid ...PASSED
+Verifying Clock Synchronization ...
+  Node Name                             Status
+  ------------------------------------  ------------------------
+  droradbdr02                           passed
+
+  Node Name                             State
+  ------------------------------------  ------------------------
+  droradbdr02                           Observer
+
+CTSS is in Observer state. Switching over to clock synchronization checks using NTP
+
+  Verifying Network Time Protocol (NTP) ...
+    Verifying '/etc/chrony.conf' ...
+    Node Name                             File exists?
+    ------------------------------------  ------------------------
+    droradbdr02                           yes
+
+    Verifying '/etc/chrony.conf' ...PASSED
+    Verifying Daemon 'chronyd' ...
+    Node Name                             Running?
+    ------------------------------------  ------------------------
+    droradbdr02                           yes
+
+    Verifying Daemon 'chronyd' ...PASSED
+    Verifying NTP daemon or service using UDP port 123 ...
+    Node Name                             Port Open?
+    ------------------------------------  ------------------------
+    droradbdr02                           yes
+
+    Verifying NTP daemon or service using UDP port 123 ...PASSED
+    Verifying chrony daemon is synchronized with at least one external time source ...PASSED
+  Verifying Network Time Protocol (NTP) ...PASSED
+Verifying Clock Synchronization ...PASSED
+Verifying VIP Subnet configuration check ...PASSED
+Verifying Network configuration consistency checks ...PASSED
+Verifying File system mount options for path GI_HOME ...FAILED (PRVE-0007)
+Verifying Access control attributes for /var/tmp/.oracle ...FAILED (PRVE-0007)
+Verifying Access control attributes for %OCRCONFIGDIR%/maps ...FAILED (PRVE-0007)
+
+Post-check for cluster services setup was unsuccessful.
+Checks did not pass for the following nodes:
+        droradbdr02,droradbdr01
+
+
+Warnings were encountered during execution of CVU verification request "stage -post crsinst".
+
+Verifying OCR Integrity ...WARNING
+PRVG-6017 : OCR backup is located in the same disk group "+CRS" as OCR.
+
+Verifying OLR Integrity ...FAILED
+droradbdr02: PRVG-2031 : Owner of file
+             "/u01/app/oracle/crsdata/droradbdr02/olr/droradbdr02_19.olr" did
+             not match the expected value on node "droradbdr02". [Expected =
+             "root" ; Found = "oracle"]
+
+Verifying File system mount options for path GI_HOME ...FAILED
+droradbdr02: PRVE-0007 : Could not find executable
+             "/tmp/CVU_19.0.0.0.0_grid/checkFSMountOptions.sh"
+
+Verifying Access control attributes for /var/tmp/.oracle ...FAILED
+droradbdr02: PRVE-0007 : Could not find executable
+             "/tmp/CVU_19.0.0.0.0_grid/check_path_acl_attributes.sh"
+
+Verifying Access control attributes for %OCRCONFIGDIR%/maps ...FAILED
+droradbdr02: PRVE-0007 : Could not find executable
+             "/tmp/CVU_19.0.0.0.0_grid/check_path_acl_attributes.sh"
+
+
+CVU operation performed:      stage -post crsinst
+Date:                         10 Jan, 2022 1:25:02 PM
+CVU home:                     /u01/app/19.3/grid/
+User:                         grid
+
