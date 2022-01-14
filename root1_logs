@@ -1,0 +1,2090 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2021.11.18 16:25:03 =~=~=~=~=~=~=~=~=~=~=~=
+[root@droradbdr01 ~]# /u01/app/19.3/grid/root.sh/u01/app/19.3/grid/root.sh/u01/app/19.3/grid/root.sh
+Check /u01/app/19.3/grid/install/root_droradbdr01_2021-11-18_16-27-02-917328376.log for the output of root script
+[root@droradbdr01 ~]# 
+[root@droradbdr01 ~]# cd /u01/app/19.3/grid/bin/
+[root@droradbdr01 bin]# ll
+total 1031552
+-rwxr-xr-x 1 root oinstall    457904 Jul 20 16:40 acfscm
+-rwxr-xr-x 1 root oinstall      3794 Nov 18 16:27 acfsdriverstate
+-rwxr-xr-x 1 root oinstall       765 Oct 11  2015 acfshanfs
+-rwxr-xr-x 1 root oinstall    387472 Jul 20 16:40 acfsiob
+-rwxr-xr-x 1 root oinstall       759 Nov 18 16:27 acfsload
+-rwxr-xr-x 1 root oinstall    388336 Jul 20 16:40 acfsrd
+-rwxr-xr-x 1 root oinstall       812 Nov 18 16:27 acfsregistrymount
+-rwxr-xr-x 1 root oinstall       727 Sep  8  2016 acfsremote
+-rwxr-xr-x 1 root oinstall      2854 Nov 18 16:27 acfsrepl_apply
+-rwxr-xr-x 1 root oinstall   1101880 Jul 20 16:40 acfsrepl_apply.bin
+-rwxr-xr-x 1 root oinstall       755 Nov 18 16:27 acfsreplcrs
+-rwxr-xr-x 1 root oinstall      2854 Feb 10  2017 acfsrepl_dupd
+-rwxr-xr-x 1 root oinstall    719872 Jul 20 16:40 acfsrepl_dupd.bin
+-rwxr-xr-x 1 root oinstall    947976 Jul 20 16:40 acfsrepl_initializer
+-rwxr-xr-x 1 root oinstall    960528 Jul 20 16:40 acfsrepl_monitor
+-rwxr-xr-x 1 root oinstall    736808 Jul 20 16:40 acfsrepl_preapply
+-rwxr-xr-x 1 root oinstall    724624 Jul 20 16:40 acfsrepl_transport
+-rwxr-xr-x 1 root oinstall    401184 Jul 20 16:40 acfsrm
+-rwxr-xr-x 1 root oinstall       945 Jun 20  2016 acfsroot
+-rwxr-xr-x 1 root oinstall       815 Nov 18 16:27 acfssinglefsmount
+-rwxr-xr-x 1 root oinstall     13485 Mar 30  2019 adapters
+-rwxr-x--x 1 root oinstall     50872 Nov 18 16:22 adrci
+-rwxr-xr-x 1 root oinstall  88650928 Jul 20 16:40 afdboot
+-rwxr-xr-x 1 root oinstall      3078 Nov 18 16:27 afddriverstate
+-rwxr-xr-x 1 root oinstall       754 Nov 18 16:27 afdload
+-rwxr-xr-x 1 root oinstall      1000 Jun 20  2016 afdroot
+-rwxr-xr-x 1 root oinstall      2854 Nov 18 16:27 afdtool
+-rwxr-xr-x 1 root oinstall    285208 Jul 20 16:40 afdtool.bin
+-rwxr-x--x 1 root oinstall    241408 Nov 18 16:22 agtctl
+-rwxr-x--x 1 root oinstall    192616 Nov 18 16:22 amdu
+-rwxr-xr-x 1 root oinstall     11550 Nov 18 16:27 appagent
+-rwxr-xr-x 1 root oinstall   5178768 Jul 20 16:44 appagent.bin
+-rwxr-xr-x 1 root oinstall       769 Nov 18 16:27 appvipcfg
+-rwxr-x--- 1 root oinstall     18311 Aug  9  2018 appvipcfg.pl
+-rwxr-x--x 1 root oinstall      2047 Nov 18 16:22 aqxmlctl
+-rw-r--r-- 1 root oinstall      9368 Apr  1  2018 aqxmlctl.pl
+-rwxr-x--- 1 root oinstall      7908 Nov 18 16:22 asmca
+-rwxr-x--- 1 grid oinstall      6966 Jan 30  2018 asmcmd
+-rwxr-xr-x 1 grid oinstall     78531 Jul 20 16:43 asmcmdcore
+-rwxr-xr-x 1 root oinstall      3142 May 27  2014 asmproxy
+-rw-r--r-- 1 root oinstall    171155 Jul 20 16:43 bdschecksw
+-rwxr-xr-x 1 root oinstall      3017 Nov 18 16:22 bndlchk
+-rwxr-xr-x 1 root oinstall     11550 Nov 18 16:27 cdpc
+-rwxr-xr-x 1 root oinstall    177008 Jul 20 16:44 cdpc.bin
+-rwxr-xr-x 1 root oinstall       378 Nov 18 16:27 cdpcfg
+-rwxr-x--- 1 root oinstall      8284 Jun 26  2018 cdpcfg.pl
+-rwxr-xr-x 1 root oinstall     11550 Nov 18 16:27 cemutlo
+-rwxr-xr-x 1 root oinstall    181408 Jul 20 16:44 cemutlo.bin
+-rwxr-xr-x 1 root oinstall     11550 Nov 18 16:27 cemutls
+-rwxr-xr-x 1 root oinstall     35496 Jul 20 16:44 cemutls.bin
+-rwxr-xr-- 1 root oinstall      6358 Nov 18 16:27 chactl
+-rwxr-xr-x 1 root oinstall     11550 Nov 18 16:27 clscfg
+-rwxr-xr-x 1 root oinstall    284640 Jul 20 16:44 clscfg.bin
+-rwxr-x--- 1 root oinstall     11550 Nov 18 16:27 clsdiaglsnr
+-rwxr-xr-x 1 root oinstall    185616 Jul 20 16:44 clsdiaglsnr.bin
+-rwxr-xr-x 1 root oinstall     11550 Nov 18 16:27 clsecho
+-rwxr-xr-x 1 root oinstall    268944 Jul 20 16:44 clsecho.bin
+-rwxr-xr-x 1 root oinstall     11550 Nov 18 16:27 clsid
+-rwxr-xr-x 1 root oinstall    184960 Jul 20 16:44 clsid.bin
+-rwxr-xr-x 1 root oinstall     11550 Nov 18 16:27 clssproxy
+-rwxr-xr-x 1 root oinstall    203480 Jul 20 16:44 clssproxy.bin
+-rwxr-xr-x 1 root oinstall      4756 Nov 18 16:27 cluutil
+-rwxr-xr-x 1 root oinstall     10268 Nov 18 16:27 cluvfy
+-rwxr-xr-x 1 grid oinstall      1398 Sep 13  2012 cluvfyrac.sh
+-rw-r--r-- 1 root oinstall     45135 Apr 17  2019 CommonSetup.pm
+-rwxr-x--- 1 root oinstall      3120 Jul  8  2017 commonSetup.sh
+-rwxr-xr-x 1 root oinstall      6404 Jan  1  2000 coraenv
+-rwxr-x--- 1 root oinstall       682 Nov 18 16:27 crfsetenv
+-rwxr-xr-x 1 root oinstall      3740 Nov 18 16:27 crsboot_diags.sh
+-rwxr-xr-x 1 root oinstall     11550 Nov 18 16:27 crscdpd
+-rwxr-xr-x 1 root oinstall    177096 Jul 20 16:44 crscdpd.bin
+-rwxr-xr-x 1 root oinstall     11550 Nov 18 16:27 crsctl
+-rwxr-xr-x 1 root oinstall   5487448 Jul 20 16:44 crsctl.bin
+-rwxr----- 1 root oinstall     11550 Nov 18 16:27 crsd
+-rwxr----- 1 root oinstall    390664 Jul 20 16:44 crsd.bin
+-rwxr-xr-x 1 root oinstall      2989 Aug 21  2012 crsdiag.pl
+-rwxr-xr-x 1 root oinstall      3219 Nov 18 16:27 crskeytoolctl
+-rwxr-xr-x 1 root oinstall       352 Nov 18 16:27 crsrename
+-rwxr-x--- 1 root oinstall     16865 Jul 20 16:44 crsrename.pl
+-rwxr-xr-x 1 root oinstall     13438 Sep  9  2005 crstmpl.scr
+-rwxr--r-- 1 root oinstall      7689 Nov 18 16:27 crswrapexece.pl
+-rwxr----- 1 root oinstall   5154032 Jul 20 16:44 cssdagent
+-rwxr----- 1 root oinstall         0 Nov 18 16:27 cssdagent.bin
+-rwxr----- 1 root oinstall   5154032 Jul 20 16:44 cssdmonitor
+-rwxr----- 1 root oinstall         0 Nov 18 16:27 cssdmonitor.bin
+-rwxr-xr-x 1 root oinstall     11550 Nov 18 16:27 cssvfupgd
+-rwxr-xr-x 1 root oinstall    227160 Jul 20 16:44 cssvfupgd.bin
+-rwxr-x--x 1 root oinstall     35640 Nov 18 16:22 cursize
+-rwxr-x--- 1 root oinstall      7634 Nov 18 16:22 dbca
+-rw-r--r-- 1 root oinstall      8336 Feb  9  2018 dbdowngrade
+-rwxr-x--x 1 root oinstall   1357648 Jul 20 16:43 dbfs_client
+-rwxr-x--x 1 root oinstall     35768 Nov 18 16:22 dbfsize
+-rw-r--r-- 1 root oinstall      5297 Apr 17  2019 dbgeu_run_action.pl
+-rwxr-xr-x 1 root oinstall      2445 Jan  1  2000 dbhome
+-rwxr-xr-x 1 root oinstall     65496 Jul 20 16:43 dbnest
+-rwxr-xr-x 1 root oinstall     26056 Apr 17  2019 dbnestinit
+-rw-r--r-- 1 root oinstall      8289 Feb  9  2018 dbreload
+-rwxr-x--- 1 root oinstall      8142 Jan  1  2000 dbshut
+-rwxr-x--- 1 grid oinstall     15737 Jan  1  2000 dbstart
+-rwxr-x--- 1 root oinstall     10517 Nov 18 16:22 dbua
+-rwxr-x--- 1 root oinstall      3136 Apr 17  2019 dbupgrade
+-rwxr-x--x 1 root oinstall    113632 Nov 18 16:22 dbv
+-rwxr-xr-x 1 root oinstall      1515 Nov 18 16:22 deploync
+-rwxr-x--x 1 root oinstall     53712 Nov 18 16:22 dg4pwd
+-rwxr-x--x 1 root oinstall    953624 Nov 18 16:22 dgmgrl
+-rwxr----- 1 root oinstall      4975 Nov 18 16:27 dhcpproxy
+-rwxr-xr-x 1 root oinstall      7332 Nov 18 16:22 diagsetup
+-rwxr-x--- 1 root oinstall     82505 Nov 18 16:27 diagsnap.pl
+-rwxr-xr-x 1 root oinstall     85794 Jul 20 16:44 diagsnap_setup.pl
+-rwxr----- 1 root oinstall   2322976 Jul 20 16:43 diskmon
+-rwxr-xr-x 1 root oinstall   2142760 Apr 17  2019 diskmon.bin
+-rw-r--r-- 1 root oinstall     43936 Jul 20 16:44 dmproc
+-rw-r--r-- 1 root oinstall     30880 Jul 20 16:44 dockeroracleinit
+-rwxr-xr-x 1 root oinstall      1422 Nov 18 16:22 dropjava
+-rwxr-xr-x 1 root oinstall   1123280 Nov 18 16:22 dsml2ldif
+-rwxr-x--x 1 root oinstall   1177176 Nov 18 16:22 dumpsga
+-rwxr-xr-x 1 root oinstall       153 Nov  7  1997 echodo
+-rwxr-x--- 1 root oinstall      5515 Nov 18 16:22 emca
+-rwxr-xr-x 1 root oinstall     11550 Nov 18 16:27 emcrsp
+-rwxr-xr-x 1 root oinstall    934272 Jul 20 16:44 emcrsp.bin
+-rwxr-x--- 1 root oinstall      6537 Sep 28  2012 emdwgrd
+-rwxr-x--- 1 root oinstall     65179 Aug 24  2017 emdwgrd.pl
+-rwxr-xr-x 1 root oinstall      2295 Nov 18 16:22 eusm
+-rwxr-xr-x 1 root oinstall     11550 Nov 18 16:27 evmd
+-rwxr-xr-x 1 root oinstall   3265280 Jul 20 16:44 evmd.bin
+-rwxr-xr-x 1 root oinstall     11550 Nov 18 16:27 evminfo
+-rwxr-xr-x 1 root oinstall    346208 Jul 20 16:44 evminfo.bin
+-rwxr-xr-x 1 root oinstall     11550 Nov 18 16:27 evmlogger
+-rwxr-xr-x 1 root oinstall   1776992 Jul 20 16:44 evmlogger.bin
+-rwxr-xr-x 1 root oinstall     11550 Nov 18 16:27 evmmkbin
+-rwxr-xr-x 1 root oinstall    379144 Jul 20 16:44 evmmkbin.bin
+-rwxr-xr-x 1 root oinstall     11550 Nov 18 16:27 evmmklib
+-rwxr-xr-x 1 root oinstall    265672 Jul 20 16:44 evmmklib.bin
+-rwxr-xr-x 1 root oinstall     11550 Nov 18 16:27 evmpost
+-rwxr-xr-x 1 root oinstall    428680 Jul 20 16:44 evmpost.bin
+-rwxr-xr-x 1 root oinstall     11550 Nov 18 16:27 evmshow
+-rwxr-xr-x 1 root oinstall    507712 Jul 20 16:44 evmshow.bin
+-rwxr-xr-x 1 root oinstall     11550 Nov 18 16:27 evmsort
+-rwxr-xr-x 1 root oinstall    376152 Jul 20 16:44 evmsort.bin
+-rwxr-xr-x 1 root oinstall     11550 Nov 18 16:27 evmwatch
+-rwxr-xr-x 1 root oinstall    553608 Jul 20 16:44 evmwatch.bin
+-rwxr-xr-x 1 root oinstall      4109 Oct 18  2002 evt.sh
+-rwxr-x--x 1 root oinstall   1027944 Nov 18 16:22 exp
+-rwxr-x--x 1 root oinstall    233920 Nov 18 16:22 expdp
+-rwsr-x--- 1 root oinstall   3033360 Nov 18 16:22 extjob
+-rwx------ 1 grid oinstall   3033360 Nov 18 16:22 extjobo
+-rwxr-s--x 1 grid oinstall    214048 Nov 18 16:22 extproc
+-rwxr-x--- 1 root oinstall       394 Nov 18 16:22 extusrupgrade
+-rwxr-x--- 1 root oinstall   1990416 Jul 20 16:43 fmputl
+-rwxr-x--- 1 root oinstall   1727368 Jul 20 16:43 fmputlhp
+-rwxr-xr-x 1 root oinstall      5914 Sep 13  2017 genagtsh
+-rwxr-xr-x 1 root oinstall     15050 Aug  1  2018 genclntsh
+-rwxr-xr-x 1 root oinstall      6149 Sep 13  2017 genclntst
+-rwxr-x--x 1 root oinstall     68352 Nov 18 16:22 genezi
+-rwxr-xr-x 1 root oinstall   1228152 Apr 17  2019 genksms
+-rwxr-xr-x 1 root oinstall      4852 Mar 30  2019 gennfgt
+-rwxr-xr-x 1 root oinstall      7605 Mar 30  2019 gennttab
+-rwxr-xr-x 1 root oinstall      4764 Oct 10  2017 genoccish
+-rwxr-xr-x 1 root oinstall     10074 Sep 13  2017 genorasdksh
+-rwxr-xr-x 1 root oinstall      2396 Jan  1  2000 gensyslib
+-rwxr-xr-x 1 root oinstall      6204 Nov 18 16:27 ghappctl
+-rwxr-xr-x 1 root oinstall      2642 Oct 21  2017 ghappctl.pl
+-rwxr-xr-x 1 root oinstall     11550 Nov 18 16:27 gipcd
+-rwxr-xr-x 1 root oinstall   1024296 Jul 20 16:44 gipcd.bin
+-rwxr----- 1 root oinstall     11550 Nov 18 16:27 gnsd
+-rwxr----- 1 root oinstall    177592 Jul 20 16:44 gnsd.bin
+-rwxr-xr-x 1 root oinstall     11550 Nov 18 16:27 gpnpd
+-rwxr-xr-x 1 root oinstall    494840 Jul 20 16:44 gpnpd.bin
+-rwxr-xr-x 1 root oinstall     11550 Nov 18 16:27 gpnptool
+-rwxr-xr-x 1 root oinstall    414624 Jul 20 16:44 gpnptool.bin
+-rw-r----- 1 root oinstall      6280 Nov  3  2017 gridSetup.pl
+-rwxr-xr-x 1 root oinstall    189440 Jul 20 16:44 gsd
+-rwxr-x--x 1 root oinstall    345208 Nov 18 16:22 hsalloci
+-rwxr-x--x 1 root oinstall    224536 Nov 18 16:22 hsdepxa
+-rwxr-xr-x 1 root oinstall    738480 Jul 20 16:43 hsodbc
+-rwxr-x--x 1 root oinstall    228144 Nov 18 16:22 hsots
+-rwxr-x--x 1 root oinstall    511472 Nov 18 16:22 imp
+-rwxr-x--x 1 root oinstall    241832 Nov 18 16:22 impdp
+-rwsr-x--- 1 root oinstall   2340088 Nov 18 16:22 jssu
+-rwxr-xr-x 1 root oinstall      4982 Nov 18 16:27 jwcctl
+-rwxr-xr-x 1 root oinstall      7326 Nov 12  2018 jwcctl.pl
+-rwxr-x--x 1 root oinstall    146416 Nov 18 16:22 kfed
+-rwxr-xr-x 1 root oinstall     11550 Nov 18 16:27 kfod
+-rwxr-xr-x 1 root oinstall    236208 Nov 18 16:22 kfod.bin
+-rwxr-x--x 1 root oinstall     78832 Nov 18 16:22 kgmgr
+lrwxrwxrwx 1 grid oinstall        24 Nov 18 16:22 lbuilder -> ../nls/lbuilder/lbuilder
+-rwxr-xr-x 1 root oinstall   3027016 Mar  4  2019 lcsscan
+-rwxr-xr-x 1 root oinstall   1144904 Nov 18 16:22 ldapadd
+-rwxr-xr-x 1 root oinstall   1159000 Nov 18 16:22 ldapaddmt
+-rwxr-xr-x 1 root oinstall   1041032 Nov 18 16:22 ldapbind
+-rwxr-xr-x 1 root oinstall   1041112 Nov 18 16:22 ldapcompare
+-rwxr-xr-x 1 root oinstall   1045456 Nov 18 16:22 ldapdelete
+-rwxr-xr-x 1 root oinstall   1041024 Nov 18 16:22 ldapmoddn
+-rwxr-xr-x 1 root oinstall   1144904 Nov 18 16:22 ldapmodify
+-rwxr-xr-x 1 root oinstall   1159000 Nov 18 16:22 ldapmodifymt
+-rwxr-xr-x 1 root oinstall   1077288 Nov 18 16:22 ldapsearch
+-rwxr-xr-x 1 root oinstall      2896 Nov 18 16:22 ldifmigrator
+-rwxr-xr-x 1 root oinstall      1635 Dec  5  2014 linkshlib
+-rwxr-xr-x 1 root oinstall   1819048 Mar  4  2019 lmsgen
+-rwxr-xr-x 1 root oinstall      2361 Nov 18 16:22 loadjava
+-rwxr-x--x 1 root oinstall     49680 Nov 18 16:22 loadpsp
+-rwxr-xr-x 1 root oinstall     11550 Nov 18 16:27 lsdb
+-rwxr-xr-x 1 root oinstall     40984 Jul 20 16:44 lsdb.bin
+-rwxr-xr-x 1 root oinstall     11550 Nov 18 16:27 lsnodes
+-rwxr-xr-x 1 root oinstall     72936 Jul 20 16:44 lsnodes.bin
+-rwxr-x--x 1 root oinstall    187792 Nov 18 16:22 lsnrctl
+-rwxr-xr-x 1 root oinstall   1757016 Mar  4  2019 lxchknlb
+-rwxr-xr-x 1 root oinstall   2219696 Mar  4  2019 lxegen
+-rwxr-xr-x 1 root oinstall   7209520 Mar  4  2019 lxinst
+-rwxr-x--x 1 root oinstall   1176704 Nov 18 16:22 mapsga
+-rwxr-x--x 1 root oinstall     36240 Nov 18 16:22 maxmem
+-rwxr-xr-x 1 root oinstall     11550 Nov 18 16:27 mdnsd
+-rwxr-xr-x 1 root oinstall   1411968 Jul 20 16:44 mdnsd.bin
+-rwxr-xr-x 1 root oinstall      4927 Nov 18 16:27 mgmtca
+-rwxr-xr-x 1 root oinstall      5044 Nov 18 16:27 mgmtua
+-rwxr-x--x 1 root oinstall     98224 Nov 18 16:22 mkpatch
+-rwxr-xr-x 1 root oinstall      4587 Mar  2  2019 mkstore
+-rwxr-x--- 1 root oinstall     36933 Jul 20 16:43 mtactl
+-rwxr-xr-x 1 root oinstall      1351 Nov 18 16:22 ncomp
+-rwxr-x--- 1 root oinstall      3698 Nov 18 16:27 ndfnceca
+-rwxr-x--- 1 root oinstall      6729 Nov 18 16:22 netca
+-rwxr-x--- 1 root oinstall        93 Nov 18 16:22 netca_deinst.sh
+-rwxr-xr-x 1 root oinstall      7738 Nov 18 16:22 netmgr
+-rwxr-x--x 1 root oinstall    111440 Nov 18 16:22 nid
+-rwxr-xr-x 1 root oinstall      2885 Nov 18 16:27 oc4jctl
+-rwxr-xr-x 1 root oinstall      5739 Nov 18 16:27 ochadctl
+-rw-r--r-- 1 root oinstall     13916 Aug 16  2017 ochadctl.pl
+-rwxr-xr-x 1 root oinstall     11550 Nov 18 16:27 oclskd
+-rwxr-x--x 1 root oinstall    250792 Jul 20 16:44 oclskd.bin
+-rwxr-xr-x 1 root oinstall     11550 Nov 18 16:27 oclsomon
+-rwxr-xr-x 1 root oinstall     11550 Nov 18 16:27 oclsvmon
+-rwxr-x--- 1 root oinstall      2334 Nov 18 16:27 oclumon
+-rwxr-x--- 1 root oinstall    251160 Jul 20 16:44 oclumon.bin
+-rwxr-x--- 1 root oinstall      3115 Nov 18 16:27 oclumon.pl
+-rwxr-xr-x 1 root oinstall     11550 Nov 18 16:27 ocrcheck
+-rwxr-xr-x 1 root oinstall    825768 Jul 20 16:44 ocrcheck.bin
+-rwxr-xr-x 1 root oinstall     11550 Nov 18 16:27 ocrconfig
+-rwxr-xr-x 1 root oinstall    953616 Jul 20 16:44 ocrconfig.bin
+-rwxr-xr-x 1 root oinstall     11550 Nov 18 16:27 ocrdump
+-rwxr-xr-x 1 root oinstall    325848 Jul 20 16:44 ocrdump.bin
+-rwxr-xr-x 1 root oinstall     11550 Nov 18 16:27 ocrpatch
+-rwxr-xr-x 1 root oinstall     11550 Nov 18 16:27 ocssd
+-rwxr-xr-x 1 root oinstall   1845040 Jul 20 16:44 ocssd.bin
+-rwxr-xr-x 1 root oinstall     11550 Nov 18 16:27 ocssdrim
+-rwxr-xr-x 1 root oinstall    917576 Jul 20 16:44 ocssdrim.bin
+-rwxr----- 1 root oinstall     11550 Nov 18 16:27 octssd
+-rwxr----- 1 root oinstall    428168 Jul 20 16:44 octssd.bin
+-rwxr-xr-x 1 root oinstall     11550 Nov 18 16:27 odig
+-rwxr-xr-x 1 root oinstall    253192 Jul 20 16:44 odig.bin
+-rwxr-xr-x 1 root oinstall      1276 Nov 18 16:22 odisrvreg
+-rwxr-xr-x 1 root oinstall     11550 Nov 18 16:27 odnsd
+-rwxr-xr-x 1 root oinstall    208344 Jul 20 16:44 odnsd.bin
+-rwxr-xr-x 1 root oinstall       703 Jan  1  2000 oerr
+-rw-r--r-- 1 root oinstall      5003 Jan  1  2000 oerr.pl
+-rwxr----- 1 root oinstall     11550 Nov 18 16:27 ohasd
+-rwxr----- 1 root oinstall    424424 Jul 20 16:44 ohasd.bin
+-rwxr-xr-x 1 root oinstall      2131 Nov 18 16:22 oidca
+-rwxr-xr-x 1 root oinstall      3131 Nov 18 16:22 oidprovtool
+-rwxr-xr-x 1 root oinstall     11550 Nov 18 16:27 oifcfg
+-rwxr-xr-x 1 root oinstall    383056 Jul 20 16:44 oifcfg.bin
+-rwxr-xr-x 1 root oinstall    178688 Jul 20 16:44 oifcfg_ifls
+-rwxr-xr-x 1 root oinstall      1394 Nov 18 16:22 ojvmjava
+-rwxr-xr-x 1 root oinstall      1276 Nov 18 16:22 ojvmtc
+-rwxr-xr-x 1 root oinstall      2854 Feb 10  2017 okacmd
+-rwxr-xr-x 1 root oinstall    495200 Jul 20 16:40 okacmd.bin
+-rwxr-xr-x 1 root oinstall      1980 Jun 20  2016 okadriverstate
+-rwxr-xr-x 1 root oinstall       754 May 26  2015 okaload
+-rwxr-xr-x 1 root oinstall       940 Jun 20  2016 okaroot
+-rwxr-xr-x 1 root oinstall      7059 Dec  8  2017 okcreate
+-rwxr-xr-x 1 root oinstall     90672 Nov 18 16:22 okdstry
+-rw------- 1 grid oinstall         0 Apr 18  2019 okdstry0
+-rwxr-xr-x 1 root oinstall     95808 Nov 18 16:22 okinit
+-rw------- 1 grid oinstall         0 Apr 18  2019 okinit0
+-rwxr-xr-x 1 root oinstall    105904 Nov 18 16:22 oklist
+-rw------- 1 grid oinstall         0 Apr 18  2019 oklist0
+-rwxr-xr-x 1 root oinstall      1001 Jun 20  2016 olfscmd
+-rwxr-xr-x 1 root oinstall     38408 Jul 20 16:40 olfsctl
+-rwxr-xr-x 1 root oinstall      1007 Jun 20  2016 olfsroot
+-rwxr-x--- 1 root oinstall       855 Nov 18 16:27 ologdbg
+-rwxr-x--- 1 root oinstall      4306 Nov 18 16:27 ologdbg.pl
+-rwxr-x--- 1 root oinstall    251160 Jul 20 16:44 ologgerd
+-rwxr-xr-x 1 root oinstall     11550 Nov 18 16:27 olsnodes
+-rwxr-xr-x 1 root oinstall    241056 Jul 20 16:44 olsnodes.bin
+-rwxr-xr-x 1 root oinstall  53561496 Jul 20 16:43 oms_daemon
+-rwxr-xr-x 1 root oinstall  53591640 Jul 20 16:43 omsfscmds
+-rwxr-xr-x 1 grid oinstall      1143 Nov 18 16:27 onsctl
+-rwxr-xr-x 1 root oinstall     56288 Jul 20 16:44 oprocd
+-rwxr-x--x 1 root oinstall     99192 Nov 18 16:22 oputil
+-rw-r--r-- 1 root oinstall    197632 Jul 20 16:43 opwdintg.exe
+-rwxr-xr-x 1 root oinstall     11550 Nov 18 16:27 oraagent
+-rwxr-xr-x 1 root oinstall 121736304 Jul 20 16:44 oraagent.bin
+-rwxr-xr-x 1 root oinstall   6153104 Apr 17  2019 orabase
+-rwxr-x--- 1 root oinstall   1848136 Jul 20 16:43 orabaseconfig
+-rwxr-x--- 1 root oinstall   1848136 Jul 20 16:43 orabasehome
+-rwsr-s--x 1 grid oinstall 425711888 Nov 18 16:27 oracle
+-rwxr----- 1 root oinstall     11550 Nov 18 16:27 oracsswd
+-rwxr----- 1 root oinstall     54072 Jul 20 16:44 oracsswd.bin
+-rw-r--r-- 1 root oinstall     11550 Nov 18 16:27 oradaemonagent
+-rwsr-x--- 1 root oinstall    147848 Apr 17  2019 oradism
+-rwxr-xr-x 1 root oinstall    173048 Jul 20 16:43 oradnfs
+-rwxr-xr-x 1 root oinstall      2397 Nov 18 16:22 oradnfs_run.sh
+-rwxr-xr-x 1 root oinstall     11550 Nov 18 16:27 oradnssd
+-rwxr-xr-x 1 root oinstall    338112 Jul 20 16:44 oradnssd.bin
+-rwxr-xr-x 1 root oinstall      6823 Jan  1  2000 oraenv
+-rwxr-x--- 1 root oinstall      4203 Mar 13  2019 oraipsecsetup
+-rwxr-xr-x 1 root oinstall      6295 Nov 18 16:27 orajagent
+-rwxr-x--- 1 root oinstall        44 Dec  5  2002 orajaxb
+-rwxr----- 1 root oinstall      6295 Nov 18 16:27 orajrootagent
+-rwxr-xr-x 1 root oinstall      2790 Jan  1  2000 orald
+-rwxr-xr-x 1 root oinstall     11550 Nov 18 16:27 oranetmonitor
+-rwxr-xr-x 1 root oinstall   1194968 Jul 20 16:44 oranetmonitor.bin
+-rwxr-x--- 1 root oinstall     54704 Jul 20 16:43 oraping
+-rwxr-xr-x 1 root oinstall      4619 Mar  2  2019 orapki
+-rwxr-x--x 1 root oinstall    159520 Nov 18 16:22 orapwd
+-rwxr----- 1 root oinstall     11550 Nov 18 16:27 orarootagent
+-rwxr----- 1 root oinstall 121743888 Jul 20 16:44 orarootagent.bin
+-rwxr-x--x 1 root oinstall     26560 Jul 20 16:43 oraversion
+-rwxr-x--- 1 root oinstall        48 Sep 25  2000 oraxml
+-rwxr-x--- 1 root oinstall        48 Sep 25  2000 oraxsl
+-rwxr-x--x 1 root oinstall   8412392 Nov 18 16:22 orion
+-rwxr-xr-x 1 root oinstall     39656 Nov 18 16:22 osdbagrp
+-rw-r----- 1 root oinstall     29544 Apr 18  2019 osdbagrp0
+-rwxr-x--x 1 root oinstall     27176 Apr 17  2019 osh
+-rwxr-x--- 1 root oinstall     11550 Nov 18 16:27 osysmond
+-rwxr-x--- 1 root oinstall    251424 Jul 20 16:44 osysmond.bin
+-rwxr-xr-x 1 root oinstall      6093 Mar  2  2019 owm
+-rwxr-x--- 1 root oinstall      5385 Oct  2  2017 patchgen
+-rw-r----- 1 root oinstall      3876 Nov 18 16:22 platform_common
+-rwxr-x--x 1 root oinstall    158776 Nov 18 16:22 plshprof
+-rwxr-xr-x 1 root oinstall  10491032 Apr 17  2019 proc
+-rwxr-xr-x 1 root oinstall  10172496 Apr 17  2019 procob
+-rwxr-xr-x 1 root oinstall      5606 Nov 18 16:27 qosctl
+-rwxr-xr-x 1 root oinstall    702216 Jul 20 16:44 racgeut
+-rwxr-xr-x 1 root oinstall    694560 Jul 20 16:44 racgevtf
+-rwxr-xr-x 1 root oinstall    772864 Jul 20 16:44 racgmain
+-rwxr-xr-x 1 root oinstall     24344 Mar 13  2019 racgvip
+-rwxr-xr-x 1 root oinstall      1505 Nov 18 16:27 racgwrap
+-rwxr-xr-x 1 root oinstall     40216 Nov 18 16:22 rawutl
+-rw-r----- 1 root oinstall         0 Apr 18  2019 rawutl0
+-rwxr-x--- 1 root oinstall      7161 Nov 18 16:22 rconfig
+-rwxr-xr-x 1 root oinstall      4715 Nov 18 16:27 rdtool
+-rwxr-xr-x 1 grid oinstall      6981 Aug 27  2018 relink
+-rwxr-x--x 1 root oinstall    233080 Nov 18 16:22 renamedg
+-rwxr-xr-x 1 root oinstall      6876 Nov 18 16:27 rhpctl
+-rwxr-xr-x 1 root oinstall      3081 Nov 18 16:27 rhpplsnr
+-rwxr-xr-x 1 root oinstall      2971 Nov 18 16:27 rhpplsnrctl
+-rw-r--r-- 1 root oinstall     37577 Jul 26  2017 rhpplsnr_lib.pm
+-rw-r--r-- 1 root oinstall      2412 Apr 11  2018 rhpplsnr.pl
+-rwxr-xr-x 1 root oinstall      6070 Nov 18 16:27 rhprepos
+-rwxr-x--x 1 root oinstall  13598520 Nov 18 16:22 rman
+-rwxr-x--- 1 root oinstall      4689 Nov 18 16:22 roohctl
+-rwxr-x--- 1 root oinstall      2139 Sep 20  2017 rootPreRequired.sh
+-rw-r----- 1 root oinstall      3181 Aug 24  2017 runcluvfy.pl
+-rwxr-x--x 1 root oinstall    157496 Nov 18 16:22 sbttest
+-rwxr-x--- 1 root oinstall     34312 Jul 20 16:43 schema
+-rwxr-xr-x 1 root oinstall      2833 Nov 18 16:22 schemasync
+-rwxr-xr-x 1 root oinstall    177216 Jul 20 16:44 sclsspawn
+-rwxr-x--- 1 root oinstall      6606 Nov 18 16:27 scrctl
+-rwxr-xr-x 1 root oinstall     11550 Nov 18 16:27 scriptagent
+-rwxr-xr-x 1 root oinstall   5045816 Jul 20 16:44 scriptagent.bin
+-rwxr-x--x 1 root oinstall   4206984 Nov 18 16:22 setasmgid
+-rwxr-xr-x 1 root oinstall      2238 Nov 18 16:27 setasmgidwrap
+-rwxr-x--x 1 root oinstall     36328 Nov 18 16:22 skgxpinfo
+-rwxr-x--x 1 root oinstall   1691368 Nov 18 16:22 sqlldr
+-rwxr-xr-x 1 root oinstall     33832 Nov 18 16:22 sqlplus
+-rwxr-xr-x 1 root oinstall      4749 Nov 18 16:22 srvconfig
+-rwxr-xr-x 1 root oinstall     11681 Nov 18 16:22 srvctl
+-rwxr-xr-x 1 root oinstall      1352 Nov 18 16:22 statusnc
+-rwxr-xr-x 1 root oinstall      3261 May  4  2000 symfind
+-rwxr-x--x 1 root oinstall     46256 Nov 18 16:22 sysresv
+lrwxrwxrwx 1 root root            30 Nov 18 16:28 tfactl -> /opt/oracle.ahf/tfa/bin/tfactl
+-rwxr-x--x 1 root oinstall    141664 Nov 18 16:22 tkprof
+-rwxr-xr-x 1 root oinstall         0 Aug 14  2014 tnnfg
+-rwxr-x--x 1 root oinstall   1077288 Nov 18 16:22 tnslsnr
+-rwxr-x--x 1 root oinstall     46848 Nov 18 16:22 tnsping
+-rwxr-xr-x 1 root oinstall      2979 Nov 18 16:22 trcasst
+-rwxr-x--x 1 root oinstall    134880 Nov 18 16:22 trcldr
+-rwxr-x--x 1 root oinstall     61040 Nov 18 16:22 trcroute
+-rwxr-xr-x 1 root oinstall      2024 Nov 18 16:22 trcsess
+-rwxr-x--x 1 root oinstall     45992 Nov 18 16:22 tstshm
+-rwxr-x--x 1 root oinstall    245960 Nov 18 16:22 uidrvci
+-rwxr-xr-x 1 root oinstall      4124 Nov 18 16:22 umu
+-rwxr-xr-x 1 root oinstall      1229 Nov 18 16:27 usrvip
+-rwxr-xr-x 1 root oinstall         0 Nov 18 16:27 vipca
+-rwxr-x--x 1 root oinstall   9542992 Nov 18 16:22 wrap
+-rwxr-x--x 1 root oinstall    760208 Nov 18 16:22 wrc
+-rwxr-x--- 1 root oinstall    139544 Jul 20 16:43 xml
+-rwx------ 1 grid oinstall     92168 Mar 19  2019 xmlwf
+-rwxr-xr-x 1 root oinstall    230027 Jun 15  2016 zip
+[root@droradbdr01 bin]# 
+[root@droradbdr01 bin]# cat /u01/app/19.3/grid/bin/srvctl
+#!/bin/sh
+#
+# $Header: opsm/utl/srvctl.sbs /unix/79 2018/04/01 22:59:05 rtattuku Exp $
+#
+# srvctl
+#
+# Copyright (c) 2000, 2018, Oracle and/or its affiliates. All rights reserved.
+#
+#    NAME
+#      srvctl - Oracle Server Control Utility
+#
+#    DESCRIPTION
+#      Oracle Server Control Utility can be used to administer a RAC database,
+#      i.e., to modify the configuration information of a RAC 
+#      database server as well as to do start/stop/status operations on the
+#      instances of the server.
+#
+#    MODIFIED   (MM/DD/YY)
+#       yizhang  03/02/18 - fix bug 27292107
+#       jorgepe  01/22/18 - Fix bug 26734991: Remove hardcoded references
+#       bhshanmu 06/12/17 - bhshanmu_bug-26003322_linux
+#       rdesale  06/26/16 - fix bug 23522607
+#       ocordova 01/25/16 - Enable TLS support
+#       mavohra  05/27/15 - Fix for bug 21079481
+#       mpradeep 03/18/15 - 14201274 - Provide absolute path for dirname
+#       vgunredd 03/16/15 - Fix bug 20709539
+#       bmanry   12/08/14 - add ORACLE_BASE environment variable
+#       vobulapu 11/13/14 - added mail.jar and activation.jar
+#       rgoteti  04/21/14 - removed TEST_SRVCTL_CTRLC_PROPERTY property
+#       rgoteti  01/10/14 - add TEST_SRVCTL_CTRLC_PROPERTY property
+#       sidshank 11/21/13 - add JNITRACE property.
+#       satg     07/24/13 - Added chaconfig.jar to the class path
+#       sidshank 06/14/13 - add SRVM_NATIVE_TRACE environment var.
+#       epineda  10/10/12 - Added ldapjclnt12.jar to classpath
+#       vobulapu 19/03/12 - Fix bug 13773388(Removing SCJAR)
+#       ccharits 03/16/12 - Fixed bug 13828290
+#       agridnev 10/20/11 - fixed bug 13080540
+#       takiba   05/05/11 - bug11875695: prevent substitution of JREDIR, etc.
+#       agridnev 06/19/11 - adde clsce.jar to support snapshots
+#       yizhang  04/24/11 - fix bug 8742839
+#       yizhang  01/13/11 - add antlr jar to classpath
+#       yizhang  01/05/11 - set USING_ANTLR property when USING_ANTLR
+#                           environment variable is set
+#       yizhang  12/16/10 - fix bug 9256393
+#       sowong   04/09/10 - XbranchMerge sowong_bug-9536406 from
+#                           st_has_11.2.0.1.0
+#       sravindh 09/18/09 - XbranchMerge sravindh_mrg2lnx2 from
+#                           st_has_11.2.0.1.0
+#       yizhang  03/01/10 - fix bug 9433691
+#       yizhang  12/24/09 - fix bug 9040155
+#       ksviswan 08/17/09 - Fix LD_LIBRARY_PATH for Sol.X64
+#       sravindh 05/05/09 - Bug 8481528
+#       rxkumar  02/03/09 - fix bug8218759
+#       rxkumar  01/22/09 - fix bug7715235
+#       rxkumar  07/16/08 - fix EONSJAR
+#       sowong   05/20/08 - change ORACLE_HOME to OHOME
+#       spavan   05/12/08 - fix bug6937911
+#       spavan   04/16/08 - fix bug6957022
+#       spavan   03/26/08 - fix srvctl installer variables.
+#       rwessman 04/04/08 - Added GNS jar file to support additions for GNS.
+#       rxkumar  01/08/08 - fix bug6730574
+#       sowong   10/30/07 - remove -x
+#       srisanka 10/15/07 - replace Installer vars
+#       yizhang  09/25/07 - add property oracle.eonsd.tracefile
+#       rxkumar  09/06/07 - update classpath to include eons.jar
+#       lweng    05/09/07 - add option to get srvctl11.jar
+#       rajkris  03/07/07 - 
+#       sowong   02/27/07 - fix bug5387862
+#       rxkumar  07/25/06 - fix bug5313735 
+#       rxkumar  07/05/06 - add srvctl trace file support: bug5377319
+#       rxkumar  07/06/06 - fix bug5330848 
+#       rxkumar  05/08/06 - fix bug5211942 
+#       sowong   04/11/06 - fix bug 5140038. 
+#       mnijasur 02/21/06 - fix 5029615 - merge linux-ppc port changes 
+#       bkannike 02/07/06 - Fix for 4937400 
+#       sowong   10/05/05 - fix bug 4624796 
+#       rxkumar  11/29/04 - fix bug4024708 
+#       dliu     11/18/04 - replace OH 
+#       khsingh  10/07/04 - add workaround for bug (3937317)
+#       khsingh  09/27/04 - update case statement (3914991)
+#       gdyoung  09/17/04 - ;;
+#       gdyoung  08/20/04 - ple/st script merging 
+#       dliu     08/04/04 - get them work on linux 
+#       dliu     11/20/03 - support for trace 
+#       dliu     11/12/03 - unset ORA_CRSDEBUG 
+#       bhamadan 09/18/03 - replacing s_jre131Location with s_jreLocation 
+#       khsingh  06/25/03 - remove policy file
+#       rxkumar  06/03/03 - add srvmasm.jar
+#       rdasari  06/02/03 - set LD_LIBRARY_PATH appropriately for 32 and 64 bit solaris platforms
+#       dliu     02/21/03 - add i18n.jar
+#       dliu     11/13/02 - use ORA_CRS_UI_FMT to turn on output capture
+#       dliu     10/17/02 - turn on output capture
+#       jtellez  10/04/02 - make policy ==
+#       surchatt 09/06/02 - puttint policy file location
+#       rdasari  08/07/02 - use java instead of jre
+#       rdasari  08/01/02 - use jdk131
+#       jtellez  07/26/02 - add srvmhas.jar to classpath
+#       rdasari  05/09/01 - changing the header information
+#       rdasari  03/22/01 - changing to ops to srv.
+#       dliu     03/02/01 - use "$@" for argument list. this iscritical for correct interpretation of arguments with spaces in them..
+#       dliu     02/26/01 - fix bug #1656127: SHLIB_PATH change.
+#       dliu     02/23/01 - replace $ORACLE_HOME in classpath with an install variable..
+#       jcreight 11/08/00 - define OPSMJAR, not OPSJAR
+#       rdasari  10/27/00 - Making corrections
+#       jcreight 10/25/00 - opsctl.jar is in $ORACLE_HOME/opsm/jlib.
+#       rdasari  09/11/00 - Adding the case for HI-UX
+#       rdasari  08/25/00 - Adding the definition of JREJAR variable
+#
+
+DIRNAME=/usr/bin/dirname
+
+# External Variable set by the Installer
+OHOME=/u01/app/19.3/grid
+
+cmdpath=`$DIRNAME ${0}`
+
+case "$cmdpath" in
+    /*) ;;
+    .) cmdpath=`pwd`;;
+    *) cmdpath=`pwd`/$cmdpath;;
+esac
+  
+OHOMEDIR=`$DIRNAME $cmdpath`
+
+if [ ! -d ${OHOMEDIR}/bin ] || [ ! -f ${OHOMEDIR}/jlib/srvm.jar ]
+then
+    OHOMEDIR=/u01/app/19.3/grid
+fi
+
+JREDIR=${OHOMEDIR}/jdk
+JLIBDIR=${OHOMEDIR}/jlib
+LDAP_VERSION=%ldap_version%
+# jar files
+
+# SRVM-ASM jar file
+SRVMASMJAR=${JLIBDIR}/srvmasm.jar
+
+### ORATST_SRVCTL11 is a for upgrade tests and WLM folks to add nodeapps in 11.1 style
+if [ -z "${ORATST_SRVCTL11}" ]
+then
+#SRVM jar file
+   SRVMJAR=${JLIBDIR}/srvm.jar
+
+#SRVCTL jar file
+   SRVCTLJAR=${OHOMEDIR}/srvm/jlib/srvctl.jar
+
+if [ -f ${OHOMEDIR}/srvm/jlib/antlr-3.3-complete.jar ]
+then
+   ANTLRJAR=${OHOMEDIR}/srvm/jlib/antlr-3.3-complete.jar
+else
+   ANTLRJAR=${OHOMEDIR}/srvm/jlib/antlr-complete.jar
+fi
+
+# SRVM-HAS jar file
+   SRVMHASJAR=${JLIBDIR}/srvmhas.jar
+fi
+
+# Grid Naming Service jar file.
+GNSJAR=${JLIBDIR}/gns.jar
+
+# JWC cred jar file
+JWCCREDJAR=${JLIBDIR}/jwc-cred.jar
+
+#clsce.jar for snapshot support
+CLSCEJAR=${JLIBDIR}/clsce.jar
+
+#chaconfig.jar for cha support
+CHACONFIGJAR=${JLIBDIR}/chaconfig.jar
+
+#ojdbc6.jar for jdbc connectivity
+JDBCJAR=${OHOMEDIR}/jdbc/lib/ojdbc6.jar
+
+# Supercluster jar files
+EONSJAR=${OHOMEDIR}/ons/lib/ons.jar
+
+#NetCa config jar
+NETCFGJAR=${JLIBDIR}/netcfg.jar
+
+#LDAP jar to read listener.ora file on upgrade
+LDAPJAR=${JLIBDIR}/ldapjclnt${LDAP_VERSION}.jar
+
+#mail.jar
+MAILJAR=${OHOMEDIR}/lib/mail.jar
+
+#activation.jar
+ACTIVATIONJAR=${OHOMEDIR}/lib/activation.jar
+
+# JRE Executable and Class File Variables
+JRE=${JREDIR}/bin/java
+JREJAR=${JREDIR}/jre/lib/rt.jar:${JREDIR}/jre/lib/i18n.jar
+
+CLASSPATH=${NETCFGJAR}:${LDAPJAR}:${JREJAR}:${SRVMJAR}:${SRVMHASJAR}:${SRVMASMJAR}:${EONSJAR}:${SRVCTLJAR}:${GNSJAR}:${ANTLRJAR}:${CLSCEJAR}:${CHACONFIGJAR}:${JDBCJAR}:${MAILJAR}:${ACTIVATIONJAR}:${JWCCREDJAR}
+
+# turn on output capture
+_CRS_UI_FMT=-v
+export _CRS_UI_FMT
+
+#Used for setting stack size for java thread
+JAVA_STACK_SIZE="-Xss2048k"
+
+#Used for specifying any platform specific Java options
+JRE_OPTIONS=""
+
+# Set the shared library path for JNI shared libraries
+# A few platforms use an environment variable other than LD_LIBRARY_PATH
+PLATFORM=`/bin/uname`
+case ${PLATFORM} in 
+HP-UX)
+   LD_LIBRARY_PATH=${OHOMEDIR}/lib:${OHOMEDIR}/srvm/lib
+   export LD_LIBRARY_PATH
+   SHLIB_PATH=
+   JRE_OPTIONS="-d64"
+   ;;
+AIX)
+   LIBPATH=${OHOMEDIR}/lib:${OHOMEDIR}/srvm/lib:${LIBPATH}
+   export LIBPATH
+   JRE_OPTIONS="-d64"
+   JAVA_STACK_SIZE="${JAVA_STACK_SIZE} -Xmso2048k"
+   ;;
+Linux)
+   LD_LIBRARY_PATH=${OHOMEDIR}/lib:${OHOMEDIR}/srvm/lib:${LD_LIBRARY_PATH}
+   # Linux ( ppc64 || s390x ) => LD_LIBRARY_PATH lib32
+   ARCH=`/bin/uname -m`;
+   if [ "${ARCH}" = "ppc64" -o "${ARCH}" = "s390x" ]
+   then
+     LD_LIBRARY_PATH=${OHOMEDIR}/lib32:${OHOMEDIR}/srvm/lib32:${LD_LIBRARY_PATH}
+     JAVA_STACK_SIZE="${JAVA_STACK_SIZE} -Xmso2048k"
+   fi
+   export LD_LIBRARY_PATH
+   ;;
+SunOS) 
+    LD_LIBRARY_PATH_64=${OHOMEDIR}/lib:${OHOMEDIR}/srvm/lib:${LD_LIBRARY_PATH_64}
+    export LD_LIBRARY_PATH_64
+    LD_LIBRARY_PATH=${OHOMEDIR}/lib:${OHOMEDIR}/srvm/lib:${LD_LIBRARY_PATH}
+    export LD_LIBRARY_PATH
+    JRE_OPTIONS="-d64"
+    ;;
+OSF1) LD_LIBRARY_PATH=${OHOMEDIR}/lib:${OHOMEDIR}/srvm/lib:${LD_LIBRARY_PATH}
+      export LD_LIBRARY_PATH
+      ;;
+Darwin) 
+      DYLD_LIBRARY_PATH=${OHOMEDIR}/lib:${OHOMEDIR}/srvm/lib:${DYLD_LIBRARY_PATH} 
+      export DYLD_LIBRARY_PATH 
+      ;; 
+*)    if [ -d ${OHOMEDIR}/lib32 ];
+      then
+        LD_LIBRARY_PATH=${OHOMEDIR}/lib32:${OHOMEDIR}/srvm/lib32:${LD_LIBRARY_PATH}
+      else
+        LD_LIBRARY_PATH=${OHOMEDIR}/lib:${OHOMEDIR}/srvm/lib:${LD_LIBRARY_PATH}
+      fi
+      export LD_LIBRARY_PATH
+      ;;
+esac
+
+# Set java stack size
+JRE_OPTIONS="${JRE_OPTIONS} ${JAVA_STACK_SIZE}"
+
+#Get crshome
+CHOME=`${OHOME}/srvm/admin/getcrshome`
+
+if [ "$?" = 1 ]
+then
+    echo "****Unable to retrieve Oracle Clusterware home."
+    echo "Start Oracle Clusterware stack and try again."
+    exit 1
+fi
+
+if [ "X${CHOME}" != "X${OHOME}" ]
+then  
+    case ${ORACLE_HOME} in
+        "") echo "****ORACLE_HOME environment variable is not set."
+            echo "    ORACLE_HOME should be set to the main"
+            echo "    directory that contains Oracle products."
+            echo "    Set and export ORACLE_HOME, then re-run."
+            exit 1;;
+ *) ORACLE_HOME=${ORACLE_HOME};;
+    esac
+else
+    ORACLE_HOME=${CHOME}
+fi
+export ORACLE_HOME
+
+# Properties to pass directly to java
+if [ "X${SRVM_PROPERTY_DEFS}" = "X" ]
+then
+  SRVM_PROPERTY_DEFS=""
+fi
+
+
+# Environment variable to turn on tracing
+if [ "X${SRVM_TRACE}" != "X" ]
+then
+  if [ "${SRVM_TRACE}" != "false" ]  && [ "${SRVM_TRACE}" != "FALSE" ]
+  then
+    SRVM_PROPERTY_DEFS="${SRVM_PROPERTY_DEFS} -DTRACING.ENABLED=true -DTRACING.LEVEL=2"
+    if [ "X${SRVM_NATIVE_TRACE}" != "X" ]
+    then
+      if [ "${SRVM_NATIVE_TRACE}" != "false" ]  && [ "${SRVM_NATIVE_TRACE}" != "FALSE" ]
+      then
+        SRVM_PROPERTY_DEFS="${SRVM_PROPERTY_DEFS} -DNATIVETRACING.ENABLED=true"
+      fi
+    fi
+    if [ "X${SRVM_JNI_TRACE}" != "X" ]
+    then
+      if [ "${SRVM_JNI_TRACE}" != "false" ]  && [ "${SRVM_JNI_TRACE}" != "FALSE" ]
+      then
+        SRVM_PROPERTY_DEFS="${SRVM_PROPERTY_DEFS} -DJNITRACING.ENABLED=true"
+      fi
+    fi
+    # Environment variable to turn on tracing to a file.
+    if [ "X${SRVCTL_TRACEFILE}" != "X" ]
+    then
+        SRVM_PROPERTY_DEFS="${SRVM_PROPERTY_DEFS} -Dsrvm.srvctl.tracefile=${SRVCTL_TRACEFILE} -Doracle.eonsd.tracefile=${SRVCTL_TRACEFILE}"
+    fi
+  fi
+fi
+
+if [ "X${USING_ANTLR}" != "X" ]
+then
+    SRVM_PROPERTY_DEFS="${SRVM_PROPERTY_DEFS} -Dusing_antlr=${USING_ANTLR}"
+fi
+
+# Environment variable to turn on checking
+if [ "X${CHECK_LEVEL}" != "X" ]
+then
+    SRVM_PROPERTY_DEFS="${SRVM_PROPERTY_DEFS} -DNETWORK.CHECKLEVEL=${CHECK_LEVEL}"
+fi
+
+# Add configuration file containing logging properties.
+SRVM_PROPERTY_DEFS="${SRVM_PROPERTY_DEFS} -Djava.util.logging.config.file=${CHOME}/srvm/admin/logging.properties"
+# Run srvctl 
+${JRE} ${JRE_OPTIONS} -DORACLE_HOME=${ORACLE_HOME} -classpath ${CLASSPATH} ${SRVM_PROPERTY_DEFS} oracle.ops.opsctl.OPSCTLDriver "$@"
+exit $?
+[root@droradbdr01 bin]# 
+[root@droradbdr01 bin]# cat /u01/app/19.3/grid/root.sh
+#!/bin/sh
+unset WAS_ROOTMACRO_CALL_MADE
+. /u01/app/19.3/grid/install/utl/rootmacro.sh "$@"
+. /u01/app/19.3/grid/install/utl/rootinstall.sh
+
+#
+# Invoke standalone rootadd_rdbms.sh
+#
+/u01/app/19.3/grid/rdbms/install/rootadd_rdbms.sh
+
+/u01/app/19.3/grid/rdbms/install/rootadd_filemap.sh 
+/u01/app/19.3/grid/crs/config/rootconfig.sh $@ 
+EXITCODE=$? 
+if [ $EXITCODE -ne 0 ]; then
+exit $EXITCODE
+fi
+
+[root@droradbdr01 bin]# 
+[root@droradbdr01 bin]# 
+[root@droradbdr01 bin]# 
+[root@droradbdr01 bin]# 
+[root@droradbdr01 bin]# 
+[root@droradbdr01 bin]# 
+[root@droradbdr01 bin]# 
+[root@droradbdr01 bin]# 
+[root@droradbdr01 bin]# 
+[root@droradbdr01 bin]# 
+[root@droradbdr01 bin]# 
+[root@droradbdr01 bin]# 
+[root@droradbdr01 bin]# vicat /u01/app/19.3/grid/root.sh /u01/app/19.3/grid/root.sh /u01/app/19.3/grid/root.sh /u01/app/19.3/grid/root.shv /u01/app/19.3/grid/root.shi /u01/app/19.3/grid/root.sh
+"/u01/app/19.3/grid/root.sh" 17L, 395C#!/bin/sh
+unset WAS_ROOTMACRO_CALL_MADE
+. /u01/app/19.3/grid/install/utl/rootmacro.sh "$@"
+. /u01/app/19.3/grid/install/utl/rootinstall.sh
+
+#
+# Invoke standalone rootadd_rdbms.sh
+#
+/u01/app/19.3/grid/rdbms/install/rootadd_rdbms.sh
+
+/u01/app/19.3/grid/rdbms/install/rootadd_filemap.sh
+/u01/app/19.3/grid/crs/config/rootconfig.sh $@
+EXITCODE=$?
+if [ $EXITCODE -ne 0 ]; thenexit $EXITCODE
+fi
+
+~                                                                                                                                      ~                                                                                                                                      ~                                                                                                                                      ~                                                                                                                                      ~                                                                                                                                      ~                                                                                                                                      ~                                                                                                                                      ~                                                                                                                                      ~                                                                                                                                      ~                                                                                                                                      ~                                                                                                                                      /netmasksearch hit BOTTOM, continuing at TOPE486: Pattern not found: netmask/10.172.19search hit BOTTOM, continuing at TOPE486: Pattern not found: 10.172.19
+
+
+
+:q![root@droradbdr01 bin]# vi /u01/app/19.3/grid/root.sh
+"/u01/app/19.3/grid/root.sh" 17L, 395C#!/bin/sh
+unset WAS_ROOTMACRO_CALL_MADE
+. /u01/app/19.3/grid/install/utl/rootmacro.sh "$@"
+. /u01/app/19.3/grid/install/utl/rootinstall.sh
+
+#
+# Invoke standalone rootadd_rdbms.sh
+#
+/u01/app/19.3/grid/rdbms/install/rootadd_rdbms.sh
+
+/u01/app/19.3/grid/rdbms/install/rootadd_filemap.sh
+/u01/app/19.3/grid/crs/config/rootconfig.sh $@
+EXITCODE=$?
+if [ $EXITCODE -ne 0 ]; thenexit $EXITCODE
+fi
+
+~                                                                                                                                      ~                                                                                                                                      ~                                                                                                                                      ~                                                                                                                                      ~                                                                                                                                      ~                                                                                                                                      ~                                                                                                                                      ~                                                                                                                                      ~                                                                                                                                      ~                                                                                                                                      ~                                                                                                                                      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+:q![root@droradbdr01 bin]# cat /u01/app/19.3/grid/crs/config/rootconfig.sh
+#!/bin/sh
+ORACLE_HOME=/u01/app/19.3/grid
+ALL_ROOTSCRIPT_ARGS="$@"
+
+. $ORACLE_HOME/install/utl/rootmacro.sh
+
+SU=/bin/su
+SW_ONLY=false
+PATCH_HOME=false
+MOVE_HOME=false
+TRANSPARENT_MOVE_HOME=false
+ISROLLING=true
+ADDNODE=false
+GI_WIZARD=true
+HA_CONFIG=false
+# param to indicate 'root.sh -init' execution
+ROOTSH_INIT=false
+RAC9I_PRESENT=false
+CMDLLROOTSH_CMD=$ORACLE_HOME/crs/install/cmdllroot.sh
+CONFIGSH_CMD="$ORACLE_HOME/gridSetup.sh"
+ROOTHASPL="$ORACLE_HOME/perl/bin/perl -I$ORACLE_HOME/perl/lib -I$ORACLE_HOME/crs/install $ORACLE_HOME/crs/install/roothas.pl"
+ROOTCRSPL="$ORACLE_HOME/perl/bin/perl -I$ORACLE_HOME/perl/lib -I$ORACLE_HOME/crs/install $ORACLE_HOME/crs/install/rootcrs.pl"
+GETCRSHOME="$ORACLE_HOME/srvm/admin/getcrshome"
+RHPMOVEGIPL="$ORACLE_HOME/perl/bin/perl -I$ORACLE_HOME/perl/lib -I$ORACLE_HOME/crs/install $ORACLE_HOME/srvm/admin/rhpmovegi.pl"
+ROOTSCRIPT=""
+ISLINUX=false
+EXITCODE=0
+SWONLY_MULTINODE=false
+CHECK_CRS_ENTITIES=false
+ISUPGRADE="false";
+for ARG in $@; do
+  if [ $ARG = "-init" -o $ARG = "-INIT" ]; then
+    ROOTSH_INIT=true
+  fi
+  if [ $ARG = "-upgrade" -o $ARG = "-UPGRADE" ]; then
+    ISUPGRADE="true";
+  fi
+done
+
+if [ `$UNAME` = "Linux" ]; then
+   ISLINUX=true
+fi
+
+# Bug 14153720 remove "-silent" parameter before
+# Bug 17830377 removing "-bindir" and its corresponding value before
+# passing the list to rootcrs.pl or roothas.pl
+ROOTSCRIPT_ARGS=""
+SKIPVALUE=false
+for EACH_RS_ARG in $ALL_ROOTSCRIPT_ARGS; do
+  if [ $SKIPVALUE = true ]; then 
+    SKIPVALUE=false
+  elif [ $EACH_RS_ARG = "-bindir" ]; then 
+    SKIPVALUE=true
+  elif [ $EACH_RS_ARG != "-silent" ] && [ $EACH_RS_ARG != "-Silent" ] && [ $EACH_RS_ARG != "-SILENT" ]; then
+    ROOTSCRIPT_ARGS="$ROOTSCRIPT_ARGS $EACH_RS_ARG";
+  fi
+done
+
+set_lib_path(){
+  LD_LIBRARY_PATH=$ORACLE_HOME/lib:$LD_LIBRARY_PATH
+  export LD_LIBRARY_PATH
+
+  PLATFORM=`$UNAME`
+  case $PLATFORM in
+    HP-UX)
+      SHLIB_PATH=$ORACLE_HOME/lib:$SHLIB_PATH
+      export SHLIB_PATH
+      ;;
+    AIX)
+      LIBPATH=$ORACLE_HOME/lib:$LIBPATH
+      export LIBPATH
+      ;;
+  esac
+
+}
+
+relink_rac_on(){
+    $ECHO "Relinking oracle with rac_on option"
+
+# bug 21831122 - change the current working directory
+AUXPWD="`pwd`";
+cd ${ORACLE_HOME};
+$SU $ORACLE_OWNER -c "$ECHO \"rootconfig.sh: Relinking oracle with rac_on option\" ; $ORACLE_HOME/crs/config/relink_rac_on $ORACLE_HOME $MAKE" >> $ORACLE_HOME/install/make.log 2>&1
+    EXITCODE=$?
+    cd ${AUXPWD};
+if [ $EXITCODE -ne 0 ]; then
+         $ECHO "Relinking rac_on failed"
+         exit $EXITCODE
+    fi
+}
+
+if [ "$MOVE_HOME" = "true" ]; then
+  set_lib_path
+  relink_rac_on
+
+  OLD_CRS_HOME=`$GETCRSHOME`
+  $RHPMOVEGIPL $OLD_CRS_HOME $ORACLE_HOME true
+  EXITCODE=$?
+  if [ $EXITCODE -ne 0 ]; then
+    $ECHO "The command '$RHPMOVEGIPL $OLD_CRS_HOME $ORACLE_HOME true' execution failed"
+    #exit $EXITCODE
+  fi
+  
+  ROOTSCRIPT=$ROOTCRSPL
+  # add dstcrshome to args
+  ROOTSCRIPT_ARGS="$ROOTSCRIPT_ARGS -dstcrshome $ORACLE_HOME"
+  if [ "$ISROLLING" = "false" ]; then
+    ROOTSCRIPT_ARGS="$ROOTSCRIPT_ARGS -nonrolling"
+  fi
+ 
+  if [ "$PATCH_HOME" = "true" ]; then
+    # execute prepatch
+    $ROOTSCRIPT $ROOTSCRIPT_ARGS -prepatch
+    EXITCODE=$?
+    if [ $EXITCODE -ne 0 ]; then
+      $ECHO "The command '$ROOTSCRIPT $ROOTSCRIPT_ARGS -prepatch' execution failed"
+      exit $EXITCODE
+    fi
+    # execute postpatch
+    $ROOTSCRIPT $ROOTSCRIPT_ARGS -postpatch
+    EXITCODE=$?
+    if [ $EXITCODE -ne 0 ]; then
+      $ECHO "The command '$ROOTSCRIPT $ROOTSCRIPT_ARGS -postpatch' execution failed"
+      exit $EXITCODE
+    fi
+  else
+    # execute unlock
+    $ROOTSCRIPT $ROOTSCRIPT_ARGS -unlock
+    EXITCODE=$?
+    if [ $EXITCODE -ne 0 ]; then
+      $ECHO "The command '$ROOTSCRIPT $ROOTSCRIPT_ARGS -unlock' execution failed"
+      exit $EXITCODE
+    fi
+    # execute move
+    $ROOTSCRIPT $ROOTSCRIPT_ARGS -move
+    EXITCODE=$?
+    if [ $EXITCODE -ne 0 ]; then
+      $ECHO "The command '$ROOTSCRIPT $ROOTSCRIPT_ARGS -move' execution failed"
+      exit $EXITCODE
+    fi
+  fi
+  exit 0
+fi
+# bug 26356200 - remove rootpre execution
+
+# If s/w only
+#   print the commands user needs to execute to perform GI config
+# 
+# else if Wizard or Install+Config
+#   if Wizard
+#     relink rac_on ioracle
+# 
+#   if HA Config
+#     set root script to roothas.pl
+#   else
+#     set root script to rootcrs.pl
+# 
+#   if upgrade
+#     set upgrade flag to '-upgrade'
+#   else
+#     set upgrade flag to ''
+# 
+#   execute root script with upgrade flag
+#   exit if failed
+# 
+#   if CRSConfig and Upgrade
+#     update inventory to set CRS=false for old home
+# 
+#   Update inventory with nodelist and CRS=true
+#
+
+if [ "$SW_ONLY" = "true" ]; then
+  if [ "${SWONLY_MULTINODE}" = "false" ]; then
+    $ECHO
+    $ECHO "To configure Grid Infrastructure for a Cluster or Grid Infrastructure for a Stand-Alone Server execute the following command as $ORACLE_OWNER user:"
+    $ECHO "$CONFIGSH_CMD"
+  else
+    $ECHO
+    $ECHO "To configure Grid Infrastructure for a Cluster execute the following command as $ORACLE_OWNER user:"
+    $ECHO "$CONFIGSH_CMD"
+  fi
+  $ECHO "This command launches the Grid Infrastructure Setup Wizard. The wizard also supports silent operation, and the parameters can be passed through the response file that is available in the installation media."
+  $ECHO
+else
+  #setting rac_on for addnode or configwizard
+  if [ "$GI_WIZARD" = "true" ] || [ "$ADDNODE" = "true" ] || [ "$ROOTSH_INIT" = "true" -a "$HA_CONFIG" = "false" ]; then
+     #In case of gridsetupWizard - SIHA Config GI_WIZARD = true and HA_CONFIG=true, so for this case present rac_on relinking and hence the below condition
+     if [ "$HA_CONFIG" = "false" ] && [ "$SW_ONLY" = "false" ]; then
+       relink_rac_on
+     fi
+  fi
+ 
+  if [ "$HA_CONFIG" = "true" ]; then
+    ROOTSCRIPT=$ROOTHASPL
+  else
+    ROOTSCRIPT=$ROOTCRSPL
+  fi
+
+  #dry run for Grid Upgrade
+  if [ "$ISUPGRADE" = "true" ] && [ "$CHECK_CRS_ENTITIES" = "true" ]; then
+$ECHO "Performing Dry run of the Grid Infrastructure upgrade."
+  ROOTSCRIPT_ARGS="$ROOTSCRIPT_ARGS -checkcrsentities yes"
+  fi
+
+  set_lib_path
+
+  #Execute root script with args
+  $ROOTSCRIPT $ROOTSCRIPT_ARGS
+  EXITCODE=$?
+  if [ $EXITCODE -ne 0 ]; then
+    # bug 26366134 - Removing not required failure message
+    exit $EXITCODE
+  fi
+fi
+exit 0
+[root@droradbdr01 bin]# 
+[root@droradbdr01 bin]# 
+[root@droradbdr01 bin]# cat /u01/app/19.3/grid/root.sh
+#!/bin/sh
+unset WAS_ROOTMACRO_CALL_MADE
+. /u01/app/19.3/grid/install/utl/rootmacro.sh "$@"
+. /u01/app/19.3/grid/install/utl/rootinstall.sh
+
+#
+# Invoke standalone rootadd_rdbms.sh
+#
+/u01/app/19.3/grid/rdbms/install/rootadd_rdbms.sh
+
+/u01/app/19.3/grid/rdbms/install/rootadd_filemap.sh 
+/u01/app/19.3/grid/crs/config/rootconfig.sh $@ 
+EXITCODE=$? 
+if [ $EXITCODE -ne 0 ]; then
+exit $EXITCODE
+fi
+
+[root@droradbdr01 bin]# 
+[root@droradbdr01 bin]# cd /u01/app/19.3/grid/
+[root@droradbdr01 grid]# ll
+total 2939740
+drwxr-xr-x  3 grid oinstall         18 Nov 18 16:27 acfsccm
+drwxr-xr-x  3 grid oinstall         18 Nov 18 16:27 acfsccreg
+drwxr-xr-x  3 grid oinstall         18 Nov 18 16:27 acfscm
+drwxr-xr-x  3 grid oinstall         18 Nov 18 16:27 acfsiob
+drwxr-xr-x  3 grid oinstall         18 Nov 18 16:27 acfsrd
+drwxr-xr-x  3 grid oinstall         18 Nov 18 16:27 acfsrm
+drwxr-xr-x  2 grid oinstall        102 Nov 18 16:22 addnode
+drwxr-xr-x  3 grid oinstall         18 Nov 18 16:27 advmccb
+drwxr-xr-x 10 grid oinstall        106 Apr 17  2019 assistants
+drwxrwxrwt  6 root oinstall         52 Nov 18 16:27 auth
+drwxr-xr-x  2 root oinstall      12288 Nov 18 16:28 bin
+drwxrwxr-x  4 grid oinstall         42 Nov 18 16:27 cdata
+drwxr-x---  3 grid oinstall         18 Nov 18 16:27 cdp
+drwxrwx---  6 grid oinstall        304 Nov 18 16:22 cfgtoollogs
+drwxr-x---  4 grid oinstall         31 Nov 18 16:27 cha
+drwxr-xr-x  3 grid oinstall         19 Nov 18 16:15 client
+drwxr-xr-x  4 grid oinstall         87 Nov 18 16:22 clone
+drwxr-x---  3 root oinstall         19 Nov 18 16:27 crf
+drwxr-xr-x 14 root oinstall        159 Nov 18 16:27 crs
+drwx--x--x  5 grid oinstall         41 Nov 18 16:27 css
+drwxr-xr-x  3 root oinstall         18 Nov 18 16:27 ctss
+drwxr-xr-x  3 grid oinstall         19 Nov 18 16:15 ctx
+drwxrwxr-x  7 grid oinstall         71 Apr 17  2019 cv
+drwxr-xr-x  3 grid oinstall         19 Apr 17  2019 dbjava
+drwxr-xr-x  2 grid oinstall         62 Nov 18 16:31 dbs
+drwxr-xr-x  5 grid oinstall        191 Nov 18 16:22 deinstall
+drwxr-xr-x  3 grid oinstall         20 Apr 17  2019 demo
+drwxr-xr-x  3 grid oinstall         20 Apr 17  2019 diagnostics
+-rw-r--r--  1 grid oinstall        852 Aug 18  2015 env.ora
+drwxr-x---  7 grid oinstall         65 Nov 18 16:27 evm
+drwxr-x---  3 grid oinstall         18 Nov 18 16:27 gipc
+drwxr-x---  3 grid oinstall         18 Nov 18 16:27 gnsd
+drwxr-x---  7 grid oinstall        100 Nov 18 16:30 gpnp
+-rwxr-x---  1 grid oinstall       3294 Mar  8  2017 gridSetup.sh
+drwxr-xr-x  4 grid oinstall         32 Apr 17  2019 has
+drwxr-xr-x  3 grid oinstall         19 Apr 17  2019 hs
+drwxrwx--- 10 grid oinstall       4096 Nov 18 16:27 install
+drwxr-xr-x  2 grid oinstall         29 Apr 17  2019 instantclient
+drwxr-x--- 14 grid oinstall        233 Nov 18 16:22 inventory
+drwxr-xr-x  8 grid oinstall         82 Apr 18  2019 javavm
+drwxr-xr-x  3 grid oinstall         35 Apr 17  2019 jdbc
+drwxr-xr-x  7 root oinstall        247 Nov 18 16:15 jdk
+drwxr-xr-x  2 grid oinstall       8192 Nov 18 16:27 jlib
+drwxr-xr-x 10 grid oinstall        112 Apr 17  2019 ldap
+drwxr-xr-x  4 root oinstall      12288 Nov 18 16:27 lib
+-rwxr-xr-x  1 grid oinstall 2889184573 Nov 18 15:41 LINUX.X64_193000_grid_home.zip
+drwxrwxr-x  5 grid oinstall         48 Nov 18 16:27 log
+drwxr-xr-x  5 grid oinstall         42 Apr 17  2019 md
+drwxr-x---  3 grid oinstall         18 Nov 18 16:27 mdns
+drwxr-xr-x 10 grid oinstall        106 Apr 17  2019 network
+drwxr-xr-x  5 grid oinstall         46 Apr 17  2019 nls
+drwxr-x---  3 grid oinstall         18 Nov 18 16:27 ohasd
+drwxr-xr-x  3 grid oinstall         19 Nov 18 16:15 olap
+drwxr-xr-x  3 root oinstall         18 Nov 18 16:27 ologgerd
+drwxr-x--- 15 grid oinstall       4096 Nov 18 16:22 OPatch
+drwxrwxr-x  3 grid oinstall         16 Nov 18 16:13 opatchautocfg
+drwxr-x--- 14 grid oinstall       4096 Apr 12  2019 OPatch_bkp_18112021
+-rw-r-----  1 grid oinstall  120998448 Nov 18 15:42 OPATCH_RAC27.zip
+drwxr-xr-x  8 grid oinstall         77 Apr 17  2019 opmn
+drwxr-xr-x  4 grid oinstall         34 Apr 17  2019 oracore
+drwxr-xr-x  3 grid oinstall         18 Nov 18 16:13 oradiag_grid
+-rw-r-----  1 grid oinstall        127 Nov 18 16:24 oraInst.loc
+drwxr-xr-x  6 grid oinstall         52 Apr 17  2019 ord
+drwxr-xr-x  3 grid oinstall         55 Nov 18 16:15 ords
+drwxr-xr-x  3 grid oinstall         19 Apr 17  2019 oss
+drwxr-xr-x  3 root oinstall         18 Nov 18 16:27 osysmond
+drwxr-xr-x  8 grid oinstall        226 Nov 18 16:22 oui
+drwxr-xr-x  4 grid oinstall         33 Apr 17  2019 owm
+drwxr-xr-x  5 root oinstall         39 Apr 17  2019 perl
+drwxr-xr-x  6 grid oinstall         78 Apr 17  2019 plsql
+drwxr-xr-x  5 grid oinstall         42 Apr 17  2019 precomp
+drwxr-xr-x  2 grid oinstall         30 Nov 18 16:16 pylib
+drwxr-xr-x  2 grid oinstall         26 Apr 17  2019 QOpatch
+drwxr-xr-x  5 grid oinstall         42 Apr 17  2019 qos
+drwxr-xr-x  6 grid oinstall         68 Nov 18 16:27 racg
+drwxr-xr-x 16 grid oinstall        174 Nov 18 16:15 rdbms
+drwxr-xr-x  3 grid oinstall         21 Apr 17  2019 relnotes
+drwxr-xr-x  7 grid oinstall        102 Apr 17  2019 rhp
+-rwxr-xr-x  1 root oinstall        395 Nov 18 16:22 root.sh
+-rwx------  1 grid oinstall        490 Apr 17  2019 root.sh.old
+-rw-r-----  1 grid oinstall         10 Apr 17  2019 root.sh.old.1
+-rwx------  1 grid oinstall        405 Apr 18  2019 root.sh.old.2
+-rw-r-----  1 grid oinstall         10 Apr 17  2019 root.sh.old.3
+-rwxr-xr-x  1 root oinstall        404 Nov 18 16:22 rootupgrade.sh
+-rwxr-x---  1 grid oinstall        628 Sep  4  2015 runcluvfy.sh
+drwxr-xr-x  5 grid oinstall        119 Apr 17  2019 sdk
+drwxr-xr-x  3 grid oinstall         18 Apr 17  2019 slax
+drwxr-xr-x  6 grid oinstall        288 Nov 18 16:16 sqlpatch
+drwxr-xr-x  6 grid oinstall         53 Nov 18 16:22 sqlplus
+drwxr-xr-x  8 grid oinstall         77 Nov 18 16:27 srvm
+drwxr-x---  4 root oinstall         31 Nov 18 16:27 suptools
+drwxr-xr-x  4 grid oinstall         29 Apr 17  2019 tomcat
+drwxr-xr-x  3 grid oinstall         35 Apr 17  2019 ucp
+drwxr-xr-x  7 grid oinstall         71 Apr 17  2019 usm
+drwxr-xr-x  2 grid oinstall         33 Apr 17  2019 utl
+-rw-r-----  1 grid oinstall        500 Feb  6  2013 welcome.html
+drwxr-xr-x  3 grid oinstall         18 Apr 17  2019 wlm
+drwxr-xr-x  3 grid oinstall         19 Apr 17  2019 wwg
+drwxr-xr-x  5 grid oinstall       4096 Nov 18 16:16 xag
+drwxr-x---  6 grid oinstall         58 Apr 17  2019 xdk
+[root@droradbdr01 grid]# cd crs/
+[root@droradbdr01 crs]# ll
+total 16
+drwxr-xr-x 2 grid oinstall   27 Apr 17  2019 conf
+drwxr-xr-x 2 grid oinstall  133 Nov 18 16:22 config
+drwxr-xr-x 2 grid oinstall   58 Apr 17  2019 include
+drwxr-xr-x 2 root oinstall  151 Nov 18 16:29 init
+drwxr-xr-x 3 grid oinstall 4096 Nov 18 16:27 install
+drwxr-xr-x 2 grid oinstall   24 Apr 17  2019 lib
+drwxr-x--T 2 grid oinstall    6 Nov 18 16:22 log
+drwxr-xr-x 2 grid oinstall  176 Apr 17  2019 mesg
+drwxr-xr-x 2 grid oinstall 4096 Nov 18 16:22 sbs
+drwxr-xr-x 2 root oinstall 4096 Apr 17  2019 template
+drwxr-x--T 2 grid oinstall    6 Nov 18 16:27 trace
+drwxr-xr-x 3 root oinstall 4096 Nov 18 16:27 utl
+[root@droradbdr01 crs]# cd install
+[root@droradbdr01 install]# ll
+total 400332
+-rw-r--r-- 1 grid oinstall        53 Jul 20 16:43 00_oracle-ohasd.conf
+-rwxr-xr-x 1 grid oinstall      3391 Jul 20 16:43 CLSR.pm
+-rw-r----- 1 grid oinstall      1520 Dec  8  2018 crsconfig_addparams.sbs
+-rwxr-xr-x 1 root oinstall       271 Jul 20 16:43 crsconfig_fileperms.excl
+-rwxr-x--- 1 root oinstall      7583 Nov 18 16:22 crsconfig_params
+-rw-r----- 1 grid oinstall      9354 Sep 15  2017 crsconfig_params.sbs
+-rw-r--r-- 1 grid oinstall     22239 Jul 20 16:43 crsconvert.pm
+-rwxr-xr-x 1 grid oinstall     17217 Jul 20 16:43 crsconvtoext.pm
+-rwxr-xr-x 1 root oinstall     10129 Jul 20 16:43 crscpcfg.pm
+-rwxr-xr-x 1 root oinstall     52290 Jul 20 16:43 crsdeconfig.pm
+-rwxr-xr-x 1 root oinstall     36660 Jul 20 16:43 crsdowngrade.pm
+-rw-rw-r-- 1 grid oinstall        70 Nov 18 16:27 crsgenconfig_params
+-rwxr-xr-x 1 root oinstall    142777 Jul 20 16:43 crsgpnp.pm
+-rwxr-xr-x 1 root oinstall    111191 Jul 20 16:43 crsinstall.pm
+-rwxr-xr-x 1 root oinstall     18859 Jul 20 16:43 crska.pm
+-rwxr-xr-x 1 root oinstall     87898 Jul 20 16:43 crspatch.pm
+-rwxr-xr-x 1 root oinstall      8035 Jul 20 16:43 crstfa.pm
+-rwxr-xr-x 1 root oinstall    209796 Jul 20 16:43 crsupgrade.pm
+-rwxr-xr-x 1 root oinstall    518557 Jul 20 16:43 crsutils.pm
+-rwxr-xr-x 1 root oinstall      9819 Jul 20 16:43 crsxag.pm
+-rwxr-xr-x 1 grid oinstall      4077 Nov 18 16:27 dropdb
+-rwxr-xr-x 1 grid oinstall      3517 Jul 20 16:43 dropdb.pl
+-rwxr-xr-x 1 grid oinstall      2925 Jul 20 16:43 HASLoad.pm
+-rw-r--r-- 1 grid oinstall        68 Sep 28  2010 inittab
+-rwxr-xr-x 1 grid oinstall       584 Feb 26  2018 install.excl
+-rw-r--r-- 1 grid oinstall      2670 Mar 14  2018 install_gi.excl
+-rwxr-xr-x 1 grid oinstall         0 Feb 24  2005 install.incl
+-rwxr-xr-x 1 grid oinstall        27 Jul  9  2010 installRemove.excl
+-rwxr-xr-x 1 root oinstall    116463 Jul 20 16:43 oraacfs.pm
+-rwxr-xr-x 1 root oinstall     52980 Jul 20 16:43 oraafd.pm
+-rwxr-xr-x 1 root oinstall    102065 Jul 20 16:43 oraasm.pm
+-rwxr-xr-x 1 root oinstall     19124 Jul 20 16:43 oracdp.pm
+-rwxr-xr-x 1 root oinstall     30673 Jul 20 16:43 orachm.pm
+-rw-r--r-- 1 grid oinstall       220 Mar 31  2011 oracle-ohasd.conf
+-rw-r--r-- 1 grid oinstall       699 Jul 20 16:43 oracle-ohasd.service
+-rwxr-xr-x 1 root oinstall     24616 Jul 20 16:43 oraClusterwareComp.pm
+-rwxr-xr-x 1 root oinstall     20853 Jul 20 16:43 oracss.pm
+-rwxr-xr-x 1 root oinstall         0 Nov 18 16:27 oragpnp.pm
+-rwxr-xr-x 1 root oinstall      6856 Jul 20 16:43 oraios.pm
+-rwxr-xr-x 1 root oinstall     87670 Jul 20 16:43 oraocr.pm
+-rwxr-xr-x 1 root oinstall     49768 Jul 20 16:43 oraohasd.pm
+-rwxr-xr-x 1 root oinstall     20426 Jul 20 16:43 oraolr.pm
+-rwxr-xr-x 1 root oinstall      4931 Jul 20 16:43 oraons.pm
+-rwxr-xr-x 1 root oinstall     17943 Jul 20 16:43 oraqosmserver.pm
+-rwxr-xr-x 1 root oinstall     61643 Jul 20 16:43 orasrvm.pm
+-rw-r--r-- 1 grid oinstall       414 Jun  3  2005 paramfile.crs
+-rw-r--r-- 1 root oinstall        85 Nov 18 16:27 ParentDirPerm_droradbdr01.txt
+-rwxr-xr-x 1 grid oinstall      4189 Jul 20 16:43 perlhasgen.pm
+-rw-r--r-- 1 grid oinstall      9234 Jul 20 16:43 post_gimr_ugdg.pl
+drwxrwx--- 2 root oinstall         6 Nov 18 16:27 rhpdata
+-rwxr-xr-x 1 root oinstall     24983 Jul 20 16:43 rootcrs.pl
+-rwxr-x--- 1 root oinstall      8044 Nov 18 16:22 rootcrs.sh
+-rwxr-xr-x 1 root oinstall     10305 Jul 20 16:43 roothas.pl
+-rwxr-x--- 1 root oinstall      3924 Nov 18 16:22 roothas.sh
+-rwxr-xr-x 1 root oinstall      3593 Dec 30  2014 s_crsconfig_defs
+-rwxr-xr-x 1 root oinstall       999 Nov 18 16:27 s_crsconfig_droradbdr01_env.txt
+-rwxr-xr-x 1 root oinstall    132251 Jul 20 16:43 s_crsutils.pm
+-rwxr-xr-x 1 root oinstall      3917 Jul 20 16:43 s_orachm.pm
+-rwxr-xr-x 1 root oinstall     19742 Jul 20 16:43 s_oraocr.pm
+-rwxr-xr-x 1 root oinstall      7348 Jul 20 16:43 s_oraolr.pm
+-rwxr-x--- 1 root oinstall 407686939 Jul 20 16:41 tfa_setup
+[root@droradbdr01 install]# cat crsconfig_params
+# $Header: has/install/crsconfig/crsconfig_params.sbs /main/69 2017/09/15 06:53:47 muhe Exp $
+#
+# crsconfig.lib
+#
+# Copyright (c) 2000, 2017, Oracle and/or its affiliates. All rights reserved.
+#
+#    NAME
+#      crsconfig_params.sbs - Installer variables required for root config
+#
+#    DESCRIPTION
+#      crsconfig_param - 
+#
+#    MODIFIED   (MM/DD/YY)
+#    muhe       07/27/17 - Fix bug 26421672
+#    luoli      06/22/17 - Remove CDATA_ALL_DISKGROUPS
+#    rdasari    05/15/17 - add RHP_PROVISIONED
+#    muhe       03/09/17 - Support SIHA upgrade
+#    shullur    02/12/17 - For fixing bug 25536573
+#    muhe       12/09/16 - Support shared scan
+#    shullur    11/18/16 - For fixing bug 25092647
+#    xyuan      11/07/16 - Fix bug 25037011
+#    samjo      06/17/16 - Add NAS support for CW files
+#    xyuan      04/21/16 - ODA Lite/SIP/IaaS
+#    bbeelamk   03/17/16 - Fix bug 22927215
+#    bbeelamk   02/15/16 - Fix bug 22685861
+#    ssprasad   12/05/15 - Bug 21496397: Add AFD_CONF
+#    sbezawad   11/17/15 - Bug 21919798: Add cluster properties to clscfg
+#    bbeelamk   08/18/15 - Set crsdeconfig log loc to dchome during deinstall
+#    jmarcias   07/24/15 - Fix bug 21492602
+#    jmarcias   07/21/15 - Fix bug 21471669
+#    jmarcias   06/16/15 - Fix bug 21256573
+#    muhe       05/08/15 - Fix bug 21039599
+#    luoli      04/26/15 - Remove redundant parameter NODELIST
+#    jmarcias   03/11/15 - Fix bug 20569941
+#    xyuan      12/16/14 - Fix bug 20206616
+#    xyuan      11/25/14 - Application Cluster
+#    bbeelamk   11/03/14 - Fix bug 19849644
+#    luoli      11/24/13 - write ckpts in ocr
+#    rdasari    06/27/13 - add PING_TARGETS
+#    rdasari    02/14/13 - XbranchMerge rdasari_bug-16101138_1 from
+#                          st_has_12.1.0.1
+#    rdasari    01/11/13 - disable security bug fix 9584563
+#    rdasari    09/13/12 - add GNS_TYPE
+#    rdasari    09/12/12 - remove auto node parameters
+#    rtamezd    09/12/12 - Fix bug 14115195
+#    sidshank   07/09/12 - add LISTENER_USERNAME.
+#    sidshank   02/07/12 - Remove OCFS_CONFIG param
+#    xesquive   01/24/12 - bug fix 13623926
+#    sidshank   11/01/11 - Add MGMT_DB parameter.
+#    rtamezd    09/09/11 - HUB, RIM, and AUTO_NODE_VIPS for 12g
+#    xyuan      07/19/11 - BC parameters for 12c
+#    rdasari    05/26/11 - add new params
+#    ksviswan   09/03/10 - XbranchMerge ksviswan_bug-9723529 from st_has_11.2.0
+#    dpham      05/20/10 - XbranchMerge dpham_bug-8609692 from st_has_11.2.0.1.0
+#    dpham      03/17/10 - Add TZ variable (9462081
+#    sujkumar   01/31/10 - CRF_HOME as ORACLE_HOME
+#    sujkumar   01/05/10 - Double quote args
+#    dpham      11/25/09 - Remove NETCFGJAR_NAME, EWTJAR_NAME, JEWTJAR_NAME,
+#   SHAREJAR_NAME, HELPJAR_NAME, and EMBASEJAR_NAME
+#    sukumar    11/04/09 - Fix CRFHOME. Add CRFHOME2 for Windows.
+#    anutripa   10/18/09 - Add CRFHOME for IPD/OS
+#    dpham      03/10/09 - Add ORACLE_BASE
+#    dpham      11/19/08 - Add ORA_ASM_GROUP
+#    khsingh    11/13/08 - revert ORA_ASM_GROUP for automated sh
+#    dpham      11/03/08 - Add ORA_ASM_GROUP
+#    ppallapo   09/22/08 - Add OCRID and CLUSTER_GUID
+#    dpham      09/10/08 - set OCFS_CONFIG to sl_diskDriveMappingList
+#    srisanka   05/13/08 - remove ORA_CRS_HOME, ORA_HA_HOME
+#    ysharoni   05/07/08 - NETWORKS fmt change s_networkList->s_finalIntrList
+#    srisanka   04/14/08 - ASM_UPGRADE param
+#    hkanchar   04/02/08 - Add OCR and OLRLOC for windows
+#    ysharoni   02/15/08 - bug 6817375
+#    ahabbas    02/28/08 - temporarily remove the need to instantiate the
+#                          OCFS_CONFIG value
+#    srisanka   02/12/08 - add OCFS_CONFIG param
+#    srisanka   01/15/08 - separate generic and OSD params
+#    jachang    01/15/08 - Prepare ASM diskgroup parameter (commented out)
+#    ysharoni   12/27/07 - Static pars CSS_LEASEDURATION and ASM_SPFILE
+#    yizhang    12/10/07 - Add SCAN_NAME and SCAN_PORT
+#    ysharoni   12/14/07 - gpnp work, cont-d
+#    jachang    11/30/07 - Adding votedisk discovery string
+#    ysharoni   11/27/07 - Add GPnP params
+#    srisanka   10/18/07 - add params and combine crsconfig_defs.sh with this
+#                          file
+#    khsingh    12/08/06 - add HA parameters
+#    khsingh    12/08/06 - add HA_HOME
+#    khsingh    11/25/06 - Creation
+# ==========================================================
+# Copyright (c) 2001, 2017, Oracle and/or its affiliates. All rights reserved.
+#
+# crsconfig_params.sbs -   
+#
+# Note:
+# Either have the installer instantiate the new variable or temporarily
+# skip the validation for the new variable when adding a new one to
+# the parameter file, otherwise the root script would abort due to no
+# value set for the parameter and that would break many things
+# ==========================================================
+
+SILENT=true
+ORACLE_OWNER=grid
+ORA_DBA_GROUP=oinstall
+ORA_ASM_GROUP=asmadmin
+LANGUAGE_ID=AMERICAN_AMERICA.AL32UTF8
+TZ=Asia/Kolkata
+ISROLLING=true 
+REUSEDG=false
+USER_IGNORED_PREREQ=true
+INSTALL_NODE=droradbdr01.idbibank.com 
+
+#LISTENER_USERNAME=
+LISTENER_USERNAME=grid
+MGMT_DB=false
+GIMR_CONFIG=
+GIMR_CREDENTIALS=
+
+BIG_CLUSTER=true
+HUB_SIZE=32
+HUB_NODE_LIST=droradbdr01,droradbdr02
+RIM_NODE_LIST=
+HUB_NODE_VIPS=droradbprvip01.idbibank.com,droradbprvip02.idbibank.com
+PING_TARGETS=
+
+ORACLE_HOME=/u01/app/19.3/grid
+ORACLE_BASE=/u01/app/oracle
+OLD_CRS_HOME=
+
+JREDIR=/u01/app/19.3/grid/jdk/jre/
+JLIBDIR=/u01/app/19.3/grid/jlib
+
+CLUSTER_TYPE=DB
+VNDR_CLUSTER=false
+OCR_LOCATIONS=
+CLUSTER_NAME=apdr-cls
+NODE_NAME_LIST=droradbdr01,droradbdr02
+PRIVATE_NAME_LIST=
+VOTING_DISKS=
+#VF_DISCOVERY_STRING=%s_vfdiscoverystring%
+
+# ASM consts
+ASM_UPGRADE=false
+ASM_SPFILE=
+ASM_DISCOVERY_STRING=/dev/oracleasm/disks/*
+ASM_CONFIG=near
+ASM_CREDENTIALS=
+ASMCA_ARGS=
+ 
+CRS_STORAGE_OPTION=1
+CSS_LEASEDURATION=400
+CRS_NODEVIPS='droradbprvip01.idbibank.com//eno7,droradbprvip02.idbibank.com//eno7'
+NETWORKS="eno7"/10.172.19.0:public,"eno8"/10.172.16.0:asm,"eno8"/10.172.16.0:cluster_interconnect
+SCAN_NAME=droradbprscan.idbibank.com
+SCAN_PORT=15210
+GPNP_PA=
+SCAN_TYPE=LOCAL
+SCAN_CREDENTIALS=
+
+# AFD consts
+AFD_CONF=false
+
+# RHP consts
+RHP_CONF=false
+RHP_PROVISIONED=
+
+# GNS consts
+GNS_CONF=false
+GNS_TYPE=
+GNS_ADDR_LIST=
+GNS_DOMAIN_LIST=
+GNS_ALLOW_NET_LIST=
+GNS_DENY_NET_LIST=
+GNS_DENY_ITF_LIST=
+GNS_CREDENTIALS=
+
+#### Required by OUI add node
+NEW_HOST_NAME_LIST=
+NEW_NODE_NAME_LIST=
+NEW_PRIVATE_NAME_LIST=
+NEW_NODEVIPS='droradbprvip01.idbibank.com//eno7,droradbprvip02.idbibank.com//eno7'
+
+############### OCR constants
+# GPNPCONFIGDIR is handled differently in dev (T_HAS_WORK for all)
+# GPNPGCONFIGDIR in dev expands to T_HAS_WORK_GLOBAL
+GPNPCONFIGDIR=$ORACLE_HOME
+GPNPGCONFIGDIR=$ORACLE_HOME
+OCRLOC=
+OLRLOC=
+OCRID=
+CLUSTER_GUID=
+
+CLSCFG_MISSCOUNT=
+
+## Parameters set by the crsdeconfig plugin during deinstall
+DC_HOME=
+
+######### Application Cluster
+APPLICATION_VIP=
+
+# Data and backup disk groups parameters
+CDATA_DISK_GROUP=CRS
+CDATA_FAILURE_GROUPS=
+CDATA_QUORUM_GROUPS=
+CDATA_DISKS=/dev/oracleasm/disks/CRS2,/dev/oracleasm/disks/CRS3,/dev/oracleasm/disks/CRS1
+CDATA_REDUNDANCY=EXTERNAL
+CDATA_AUSIZE=4
+CDATA_SITES=
+CDATA_SIZE=0
+
+CDATA_BACKUP_DISK_GROUP=
+CDATA_BACKUP_FAILURE_GROUPS=
+CDATA_BACKUP_QUORUM_GROUPS=
+CDATA_BACKUP_DISKS=
+CDATA_BACKUP_REDUNDANCY= 
+CDATA_BACKUP_AUSIZE=1
+CDATA_BACKUP_SITES=
+CDATA_BACKUP_SIZE=0
+
+######### Extended Cluster
+EXTENDED_CLUSTER=false
+EXTENDED_CLUSTER_SITES=apdr-cls
+EXTENDED_CLUSTER_SITE_GUIDS=
+
+# OPC variables
+OPC_CLUSTER_TYPE=
+OPC_NAT_ADDRESS=
+SCAN_IPS=%oracle_install_crs_OPC_SCAN_IPs%
+
+######### Cluster Properties
+CLUSTER_CLASS=STANDALONE
+
+######### ODA variables
+ODA_CONFIG=
+[root@droradbdr01 install]# cat crsconfig_params crsconfig_params crsconfig_params crsconfig_paramsv crsconfig_paramsi crsconfig_params
+"crsconfig_params" 232L, 7583C# $Header: has/install/crsconfig/crsconfig_params.sbs /main/69 2017/09/15 06:53:47 muhe Exp $
+#
+# crsconfig.lib
+#
+# Copyright (c) 2000, 2017, Oracle and/or its affiliates. All rights reserved.
+#
+#    NAME
+#      crsconfig_params.sbs - Installer variables required for root config
+#
+#    DESCRIPTION
+#      crsconfig_param -
+#
+#    MODIFIED   (MM/DD/YY)
+#    muhe07/27/17 - Fix bug 26421672
+#    luoli      06/22/17 - Remove CDATA_ALL_DISKGROUPS
+#    rdasari    05/15/17 - add RHP_PROVISIONED
+#    muhe03/09/17 - Support SIHA upgrade
+#    shullur    02/12/17 - For fixing bug 25536573
+#    muhe12/09/16 - Support shared scan
+#    shullur    11/18/16 - For fixing bug 25092647
+#    xyuan      11/07/16 - Fix bug 25037011
+#    samjo      06/17/16 - Add NAS support for CW files
+#    xyuan      04/21/16 - ODA Lite/SIP/IaaS
+#    bbeelamk   03/17/16 - Fix bug 22927215
+#    bbeelamk   02/15/16 - Fix bug 22685861
+#    ssprasad   12/05/15 - Bug 21496397: Add AFD_CONF
+#    sbezawad   11/17/15 - Bug 21919798: Add cluster properties to clscfg
+#    bbeelamk   08/18/15 - Set crsdeconfig log loc to dchome during deinstall
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#    jmarcias   07/24/15 - Fix bug 21492602
+#    jmarcias   07/21/15 - Fix bug 21471669
+#    jmarcias   06/16/15 - Fix bug 21256573
+#    muhe05/08/15 - Fix bug 21039599
+#    luoli      04/26/15 - Remove redundant parameter NODELIST
+#    jmarcias   03/11/15 - Fix bug 20569941
+#    xyuan      12/16/14 - Fix bug 20206616
+#    xyuan      11/25/14 - Application Cluster
+#    bbeelamk   11/03/14 - Fix bug 19849644
+#    luoli      11/24/13 - write ckpts in ocr
+#    rdasari    06/27/13 - add PING_TARGETS
+#    rdasari    02/14/13 - XbranchMerge rdasari_bug-16101138_1 from
+#st_has_12.1.0.1
+#    rdasari    01/11/13 - disable security bug fix 9584563
+#    rdasari    09/13/12 - add GNS_TYPE
+#    rdasari    09/12/12 - remove auto node parameters
+#    rtamezd    09/12/12 - Fix bug 14115195
+#    sidshank   07/09/12 - add LISTENER_USERNAME.
+#    sidshank   02/07/12 - Remove OCFS_CONFIG param
+#    xesquive   01/24/12 - bug fix 13623926
+#    sidshank   11/01/11 - Add MGMT_DB parameter.
+#    rtamezd    09/09/11 - HUB, RIM, and AUTO_NODE_VIPS for 12g
+#    xyuan      07/19/11 - BC parameters for 12c
+#    rdasari    05/26/11 - add new params
+#    ksviswan   09/03/10 - XbranchMerge ksviswan_bug-9723529 from st_has_11.2.0
+#    dpham      05/20/10 - XbranchMerge dpham_bug-8609692 from st_has_11.2.0.1.0
+#    dpham      03/17/10 - Add TZ variable (9462081
+#    sujkumar   01/31/10 - CRF_HOME as ORACLE_HOME
+#    sujkumar   01/05/10 - Double quote args
+#    dpham      11/25/09 - Remove NETCFGJAR_NAME, EWTJAR_NAME, JEWTJAR_NAME,
+#SHAREJAR_NAME, HELPJAR_NAME, and EMBASEJAR_NAME
+#    sukumar    11/04/09 - Fix CRFHOME. Add CRFHOME2 for Windows.
+#    anutripa   10/18/09 - Add CRFHOME for IPD/OS
+#    dpham      03/10/09 - Add ORACLE_BASE
+#    dpham      11/19/08 - Add ORA_ASM_GROUP
+#    khsingh    11/13/08 - revert ORA_ASM_GROUP for automated sh
+#    dpham      11/03/08 - Add ORA_ASM_GROUP
+#    ppallapo   09/22/08 - Add OCRID and CLUSTER_GUID
+#    dpham      09/10/08 - set OCFS_CONFIG to sl_diskDriveMappingList
+#    srisanka   05/13/08 - remove ORA_CRS_HOME, ORA_HA_HOME
+#    ysharoni   05/07/08 - NETWORKS fmt change s_networkList->s_finalIntrList
+#    srisanka   04/14/08 - ASM_UPGRADE param
+#    hkanchar   04/02/08 - Add OCR and OLRLOC for windows
+#    ysharoni   02/15/08 - bug 6817375
+#    ahabbas    02/28/08 - temporarily remove the need to instantiate the
+#OCFS_CONFIG value
+#    srisanka   02/12/08 - add OCFS_CONFIG param
+#    srisanka   01/15/08 - separate generic and OSD params
+#    jachang    01/15/08 - Prepare ASM diskgroup parameter (commented out)
+#    ysharoni   12/27/07 - Static pars CSS_LEASEDURATION and ASM_SPFILE
+#    yizhang    12/10/07 - Add SCAN_NAME and SCAN_PORT
+#    ysharoni   12/14/07 - gpnp work, cont-d
+#    jachang    11/30/07 - Adding votedisk discovery string
+#    ysharoni   11/27/07 - Add GPnP params
+#    srisanka   10/18/07 - add params and combine crsconfig_defs.sh with this
+#file
+#    khsingh    12/08/06 - add HA parameters
+#    khsingh    12/08/06 - add HA_HOME
+#    khsingh    11/25/06 - Creation
+# ==========================================================
+# Copyright (c) 2001, 2017, Oracle and/or its affiliates. All rights reserved.
+#
+# crsconfig_params.sbs -
+#
+# Note:
+# Either have the installer instantiate the new variable or temporarily
+# skip the validation for the new variable when adding a new one to
+# the parameter file, otherwise the root script would abort due to no
+# value set for the parameter and that would break many things
+# ==========================================================
+
+SILENT=true
+ORACLE_OWNER=grid
+ORA_DBA_GROUP=oinstall
+ORA_ASM_GROUP=asmadmin
+LANGUAGE_ID=AMERICAN_AMERICA.AL32UTF8
+TZ=Asia/Kolkata
+ISROLLING=true
+REUSEDG=false
+USER_IGNORED_PREREQ=true
+INSTALL_NODE=droradbdr01.idbibank.com
+
+#LISTENER_USERNAME=
+LISTENER_USERNAME=grid
+MGMT_DB=false
+GIMR_CONFIG=
+GIMR_CREDENTIALS=
+
+BIG_CLUSTER=true
+HUB_SIZE=32
+HUB_NODE_LIST=droradbdr01,droradbdr02
+RIM_NODE_LIST=
+HUB_NODE_VIPS=droradbprvip01.idbibank.com,droradbprvip02.idbibank.com
+PING_TARGETS=
+
+ORACLE_HOME=/u01/app/19.3/grid
+ORACLE_BASE=/u01/app/oracle
+OLD_CRS_HOME=
+
+JREDIR=/u01/app/19.3/grid/jdk/jre/
+JLIBDIR=/u01/app/19.3/grid/jlib
+
+CLUSTER_TYPE=DB
+VNDR_CLUSTER=false
+OCR_LOCATIONS=
+CLUSTER_NAME=apdr-cls
+NODE_NAME_LIST=droradbdr01,droradbdr02
+PRIVATE_NAME_LIST=
+VOTING_DISKS=
+#VF_DISCOVERY_STRING=%s_vfdiscoverystring%
+
+# ASM consts
+ASM_UPGRADE=false
+ASM_SPFILE=
+ASM_DISCOVERY_STRING=/dev/oracleasm/disks/*
+ASM_CONFIG=near
+ASM_CREDENTIALS=
+ASMCA_ARGS=
+
+CRS_STORAGE_OPTION=1
+CSS_LEASEDURATION=400
+CRS_NODEVIPS='droradbprvip01.idbibank.com//eno7,droradbprvip02.idbibank.com//eno7'
+NETWORKS="eno7"/10.172.19.0:public,"eno8"/10.172.16.0:asm,"eno8"/10.172.16.0:cluster_interconnect
+SCAN_NAME=droradbprscan.idbibank.com
+SCAN_PORT=15210
+GPNP_PA=
+SCAN_TYPE=LOCAL
+SCAN_CREDENTIALS=NETWORKS="eno7"/-- INSERT --0.172.19.0:public,"eno8"/10.172.16.0:asm,"eno8"/10.172.16.0:cluster_interconnect.0:public,"eno8"/10.172.16.0:asm,"eno8"/10.172.16.0:cluster_interconnect0:public,"eno8"/10.172.16.0:asm,"eno8"/10.172.16.0:cluster_interconnect.0:public,"eno8"/10.172.16.0:asm,"eno8"/10.172.16.0:cluster_interconnect.0:public,"eno8"/10.172.16.0:asm,"eno8"/10.172.16.0:cluster_interconnect.0:public,"eno8"/10.172.16.0:asm,"eno8"/10.172.16.0:cluster_interconnect0:public,"eno8"/10.172.16.0:asm,"eno8"/10.172.16.0:cluster_interconnect.0:public,"eno8"/10.172.16.0:asm,"eno8"/10.172.16.0:cluster_interconnect.0:public,"eno8"/10.172.16.0:asm,"eno8"/10.172.16.0:cluster_interconnect2.0:public,"eno8"/10.172.16.0:asm,"eno8"/10.172.16.0:cluster_interconnect5.0:public,"eno8"/10.172.16.0:asm,"eno8"/10.172.16.0:cluster_interconnect5.0:public,"eno8"/10.172.16.0:asm,"eno8"/10.172.16.0:cluster_interconnect..0:public,"eno8"/10.172.16.0:asm,"eno8"/10.172.16.0:cluster_interconnect2.0:public,"eno8"/10.172.16.0:asm,"eno8"/10.172.16.0:cluster_interconnect5.0:public,"eno8"/10.172.16.0:asm,"eno8"/10.172.16.0:cluster_interconnect5.0:public,"eno8"/10.172.16.0:asm,"eno8"/10.172.16.0:cluster_interconnect..0:public,"eno8"/10.172.16.0:asm,"eno8"/10.172.16.0:cluster_interconnect2.0:public,"eno8"/10.172.16.0:asm,"eno8"/10.172.16.0:cluster_interconnect5.0:public,"eno8"/10.172.16.0:asm,"eno8"/10.172.16.0:cluster_interconnect2.0:public,"eno8"/10.172.16.0:asm,"eno8"/10.172.16.0:cluster_interconnect.0:public,"eno8"/10.172.16.0:asm,"eno8"/10.172.16.0:cluster_interconnect.0:asm,"eno8"/10.172.16.0:cluster_interconnect0:asm,"eno8"/10.172.16.0:cluster_interconnect.0:asm,"eno8"/10.172.16.0:cluster_interconnect.0:asm,"eno8"/10.172.16.0:cluster_interconnect.0:asm,"eno8"/10.172.16.0:cluster_interconnect0:asm,"eno8"/10.172.16.0:cluster_interconnect.0:asm,"eno8"/10.172.16.0:cluster_interconnect.0:asm,"eno8"/10.172.16.0:cluster_interconnect2.0:asm,"eno8"/10.172.16.0:cluster_interconnect5.0:asm,"eno8"/10.172.16.0:cluster_interconnect5.0:asm,"eno8"/10.172.16.0:cluster_interconnect..0:asm,"eno8"/10.172.16.0:cluster_interconnect2.0:asm,"eno8"/10.172.16.0:cluster_interconnect5.0:asm,"eno8"/10.172.16.0:cluster_interconnect5.0:asm,"eno8"/10.172.16.0:cluster_interconnect..0:asm,"eno8"/10.172.16.0:cluster_interconnect2.0:asm,"eno8"/10.172.16.0:cluster_interconnect5.0:asm,"eno8"/10.172.16.0:cluster_interconnect2.0:asm,"eno8"/10.172.16.0:cluster_interconnect.0:asm,"eno8"/10.172.166.0:cluster_interconnect.0:cluster_interconnect0:cluster_interconnect.0:cluster_interconnect.0:cluster_interconnect.0:cluster_interconnect0:cluster_interconnect.0:cluster_interconnect.0:cluster_interconnect2.0:cluster_interconnect5.0:cluster_interconnect5.0:cluster_interconnect..0:cluster_interconnect2.0:cluster_interconnect5.0:cluster_interconnect5.0:cluster_interconnect..0:cluster_interconnect2.0:cluster_interconnect5.0:cluster_interconnect2.0:cluster_interconnect.0:clu:wq"crsconfig_params" 232L, 7589C written
+[root@droradbdr01 install]# 
+[root@droradbdr01 install]# 
+[root@droradbdr01 install]# cd
+[root@droradbdr01 ~]# 
+[root@droradbdr01 ~]# 
+[root@droradbdr01 ~]# /u01/app/19.3/grid/root.sh
+Check /u01/app/19.3/grid/install/root_droradbdr01_2021-11-18_17-15-48-327289107.log for the output of root script
+[root@droradbdr01 ~]# 
+[root@droradbdr01 ~]# cd -
+/u01/app/19.3/grid/crs/install
+[root@droradbdr01 install]# 
+[root@droradbdr01 install]# cat crsconfig_params
+# $Header: has/install/crsconfig/crsconfig_params.sbs /main/69 2017/09/15 06:53:47 muhe Exp $
+#
+# crsconfig.lib
+#
+# Copyright (c) 2000, 2017, Oracle and/or its affiliates. All rights reserved.
+#
+#    NAME
+#      crsconfig_params.sbs - Installer variables required for root config
+#
+#    DESCRIPTION
+#      crsconfig_param - 
+#
+#    MODIFIED   (MM/DD/YY)
+#    muhe       07/27/17 - Fix bug 26421672
+#    luoli      06/22/17 - Remove CDATA_ALL_DISKGROUPS
+#    rdasari    05/15/17 - add RHP_PROVISIONED
+#    muhe       03/09/17 - Support SIHA upgrade
+#    shullur    02/12/17 - For fixing bug 25536573
+#    muhe       12/09/16 - Support shared scan
+#    shullur    11/18/16 - For fixing bug 25092647
+#    xyuan      11/07/16 - Fix bug 25037011
+#    samjo      06/17/16 - Add NAS support for CW files
+#    xyuan      04/21/16 - ODA Lite/SIP/IaaS
+#    bbeelamk   03/17/16 - Fix bug 22927215
+#    bbeelamk   02/15/16 - Fix bug 22685861
+#    ssprasad   12/05/15 - Bug 21496397: Add AFD_CONF
+#    sbezawad   11/17/15 - Bug 21919798: Add cluster properties to clscfg
+#    bbeelamk   08/18/15 - Set crsdeconfig log loc to dchome during deinstall
+#    jmarcias   07/24/15 - Fix bug 21492602
+#    jmarcias   07/21/15 - Fix bug 21471669
+#    jmarcias   06/16/15 - Fix bug 21256573
+#    muhe       05/08/15 - Fix bug 21039599
+#    luoli      04/26/15 - Remove redundant parameter NODELIST
+#    jmarcias   03/11/15 - Fix bug 20569941
+#    xyuan      12/16/14 - Fix bug 20206616
+#    xyuan      11/25/14 - Application Cluster
+#    bbeelamk   11/03/14 - Fix bug 19849644
+#    luoli      11/24/13 - write ckpts in ocr
+#    rdasari    06/27/13 - add PING_TARGETS
+#    rdasari    02/14/13 - XbranchMerge rdasari_bug-16101138_1 from
+#                          st_has_12.1.0.1
+#    rdasari    01/11/13 - disable security bug fix 9584563
+#    rdasari    09/13/12 - add GNS_TYPE
+#    rdasari    09/12/12 - remove auto node parameters
+#    rtamezd    09/12/12 - Fix bug 14115195
+#    sidshank   07/09/12 - add LISTENER_USERNAME.
+#    sidshank   02/07/12 - Remove OCFS_CONFIG param
+#    xesquive   01/24/12 - bug fix 13623926
+#    sidshank   11/01/11 - Add MGMT_DB parameter.
+#    rtamezd    09/09/11 - HUB, RIM, and AUTO_NODE_VIPS for 12g
+#    xyuan      07/19/11 - BC parameters for 12c
+#    rdasari    05/26/11 - add new params
+#    ksviswan   09/03/10 - XbranchMerge ksviswan_bug-9723529 from st_has_11.2.0
+#    dpham      05/20/10 - XbranchMerge dpham_bug-8609692 from st_has_11.2.0.1.0
+#    dpham      03/17/10 - Add TZ variable (9462081
+#    sujkumar   01/31/10 - CRF_HOME as ORACLE_HOME
+#    sujkumar   01/05/10 - Double quote args
+#    dpham      11/25/09 - Remove NETCFGJAR_NAME, EWTJAR_NAME, JEWTJAR_NAME,
+#   SHAREJAR_NAME, HELPJAR_NAME, and EMBASEJAR_NAME
+#    sukumar    11/04/09 - Fix CRFHOME. Add CRFHOME2 for Windows.
+#    anutripa   10/18/09 - Add CRFHOME for IPD/OS
+#    dpham      03/10/09 - Add ORACLE_BASE
+#    dpham      11/19/08 - Add ORA_ASM_GROUP
+#    khsingh    11/13/08 - revert ORA_ASM_GROUP for automated sh
+#    dpham      11/03/08 - Add ORA_ASM_GROUP
+#    ppallapo   09/22/08 - Add OCRID and CLUSTER_GUID
+#    dpham      09/10/08 - set OCFS_CONFIG to sl_diskDriveMappingList
+#    srisanka   05/13/08 - remove ORA_CRS_HOME, ORA_HA_HOME
+#    ysharoni   05/07/08 - NETWORKS fmt change s_networkList->s_finalIntrList
+#    srisanka   04/14/08 - ASM_UPGRADE param
+#    hkanchar   04/02/08 - Add OCR and OLRLOC for windows
+#    ysharoni   02/15/08 - bug 6817375
+#    ahabbas    02/28/08 - temporarily remove the need to instantiate the
+#                          OCFS_CONFIG value
+#    srisanka   02/12/08 - add OCFS_CONFIG param
+#    srisanka   01/15/08 - separate generic and OSD params
+#    jachang    01/15/08 - Prepare ASM diskgroup parameter (commented out)
+#    ysharoni   12/27/07 - Static pars CSS_LEASEDURATION and ASM_SPFILE
+#    yizhang    12/10/07 - Add SCAN_NAME and SCAN_PORT
+#    ysharoni   12/14/07 - gpnp work, cont-d
+#    jachang    11/30/07 - Adding votedisk discovery string
+#    ysharoni   11/27/07 - Add GPnP params
+#    srisanka   10/18/07 - add params and combine crsconfig_defs.sh with this
+#                          file
+#    khsingh    12/08/06 - add HA parameters
+#    khsingh    12/08/06 - add HA_HOME
+#    khsingh    11/25/06 - Creation
+# ==========================================================
+# Copyright (c) 2001, 2017, Oracle and/or its affiliates. All rights reserved.
+#
+# crsconfig_params.sbs -   
+#
+# Note:
+# Either have the installer instantiate the new variable or temporarily
+# skip the validation for the new variable when adding a new one to
+# the parameter file, otherwise the root script would abort due to no
+# value set for the parameter and that would break many things
+# ==========================================================
+
+SILENT=true
+ORACLE_OWNER=grid
+ORA_DBA_GROUP=oinstall
+ORA_ASM_GROUP=asmadmin
+LANGUAGE_ID=AMERICAN_AMERICA.AL32UTF8
+TZ=Asia/Kolkata
+ISROLLING=true 
+REUSEDG=false
+USER_IGNORED_PREREQ=true
+INSTALL_NODE=droradbdr01.idbibank.com 
+
+#LISTENER_USERNAME=
+LISTENER_USERNAME=grid
+MGMT_DB=false
+GIMR_CONFIG=
+GIMR_CREDENTIALS=
+
+BIG_CLUSTER=true
+HUB_SIZE=32
+HUB_NODE_LIST=droradbdr01,droradbdr02
+RIM_NODE_LIST=
+HUB_NODE_VIPS=droradbprvip01.idbibank.com,droradbprvip02.idbibank.com
+PING_TARGETS=
+
+ORACLE_HOME=/u01/app/19.3/grid
+ORACLE_BASE=/u01/app/oracle
+OLD_CRS_HOME=
+
+JREDIR=/u01/app/19.3/grid/jdk/jre/
+JLIBDIR=/u01/app/19.3/grid/jlib
+
+CLUSTER_TYPE=DB
+VNDR_CLUSTER=false
+OCR_LOCATIONS=
+CLUSTER_NAME=apdr-cls
+NODE_NAME_LIST=droradbdr01,droradbdr02
+PRIVATE_NAME_LIST=
+VOTING_DISKS=
+#VF_DISCOVERY_STRING=%s_vfdiscoverystring%
+
+# ASM consts
+ASM_UPGRADE=false
+ASM_SPFILE=
+ASM_DISCOVERY_STRING=/dev/oracleasm/disks/*
+ASM_CONFIG=near
+ASM_CREDENTIALS=
+ASMCA_ARGS=
+ 
+CRS_STORAGE_OPTION=1
+CSS_LEASEDURATION=400
+CRS_NODEVIPS='droradbprvip01.idbibank.com//eno7,droradbprvip02.idbibank.com//eno7'
+NETWORKS="eno7"/255.255.252.0:public,"eno8"/255.255.252.0:asm,"eno8"/255.255.252.0:cluster_interconnect
+SCAN_NAME=droradbprscan.idbibank.com
+SCAN_PORT=15210
+GPNP_PA=
+SCAN_TYPE=LOCAL
+SCAN_CREDENTIALS=
+
+# AFD consts
+AFD_CONF=false
+
+# RHP consts
+RHP_CONF=false
+RHP_PROVISIONED=
+
+# GNS consts
+GNS_CONF=false
+GNS_TYPE=
+GNS_ADDR_LIST=
+GNS_DOMAIN_LIST=
+GNS_ALLOW_NET_LIST=
+GNS_DENY_NET_LIST=
+GNS_DENY_ITF_LIST=
+GNS_CREDENTIALS=
+
+#### Required by OUI add node
+NEW_HOST_NAME_LIST=
+NEW_NODE_NAME_LIST=
+NEW_PRIVATE_NAME_LIST=
+NEW_NODEVIPS='droradbprvip01.idbibank.com//eno7,droradbprvip02.idbibank.com//eno7'
+
+############### OCR constants
+# GPNPCONFIGDIR is handled differently in dev (T_HAS_WORK for all)
+# GPNPGCONFIGDIR in dev expands to T_HAS_WORK_GLOBAL
+GPNPCONFIGDIR=$ORACLE_HOME
+GPNPGCONFIGDIR=$ORACLE_HOME
+OCRLOC=
+OLRLOC=
+OCRID=
+CLUSTER_GUID=
+
+CLSCFG_MISSCOUNT=
+
+## Parameters set by the crsdeconfig plugin during deinstall
+DC_HOME=
+
+######### Application Cluster
+APPLICATION_VIP=
+
+# Data and backup disk groups parameters
+CDATA_DISK_GROUP=CRS
+CDATA_FAILURE_GROUPS=
+CDATA_QUORUM_GROUPS=
+CDATA_DISKS=/dev/oracleasm/disks/CRS2,/dev/oracleasm/disks/CRS3,/dev/oracleasm/disks/CRS1
+CDATA_REDUNDANCY=EXTERNAL
+CDATA_AUSIZE=4
+CDATA_SITES=
+CDATA_SIZE=0
+
+CDATA_BACKUP_DISK_GROUP=
+CDATA_BACKUP_FAILURE_GROUPS=
+CDATA_BACKUP_QUORUM_GROUPS=
+CDATA_BACKUP_DISKS=
+CDATA_BACKUP_REDUNDANCY= 
+CDATA_BACKUP_AUSIZE=1
+CDATA_BACKUP_SITES=
+CDATA_BACKUP_SIZE=0
+
+######### Extended Cluster
+EXTENDED_CLUSTER=false
+EXTENDED_CLUSTER_SITES=apdr-cls
+EXTENDED_CLUSTER_SITE_GUIDS=
+
+# OPC variables
+OPC_CLUSTER_TYPE=
+OPC_NAT_ADDRESS=
+SCAN_IPS=%oracle_install_crs_OPC_SCAN_IPs%
+
+######### Cluster Properties
+CLUSTER_CLASS=STANDALONE
+
+######### ODA variables
+ODA_CONFIG=
+[root@droradbdr01 install]# cat crsconfig_params crsconfig_params crsconfig_params crsconfig_paramsv crsconfig_paramsi crsconfig_params
+"crsconfig_params" 232L, 7589C# $Header: has/install/crsconfig/crsconfig_params.sbs /main/69 2017/09/15 06:53:47 muhe Exp $
+#
+# crsconfig.lib
+#
+# Copyright (c) 2000, 2017, Oracle and/or its affiliates. All rights reserved.
+#
+#    NAME
+#      crsconfig_params.sbs - Installer variables required for root config
+#
+#    DESCRIPTION
+#      crsconfig_param -
+#
+#    MODIFIED   (MM/DD/YY)
+#    muhe07/27/17 - Fix bug 26421672
+#    luoli      06/22/17 - Remove CDATA_ALL_DISKGROUPS
+#    rdasari    05/15/17 - add RHP_PROVISIONED
+#    muhe03/09/17 - Support SIHA upgrade
+#    shullur    02/12/17 - For fixing bug 25536573
+#    muhe12/09/16 - Support shared scan
+#    shullur    11/18/16 - For fixing bug 25092647
+#    xyuan      11/07/16 - Fix bug 25037011
+#    samjo      06/17/16 - Add NAS support for CW files
+#    xyuan      04/21/16 - ODA Lite/SIP/IaaS
+#    bbeelamk   03/17/16 - Fix bug 22927215
+#    bbeelamk   02/15/16 - Fix bug 22685861
+#    ssprasad   12/05/15 - Bug 21496397: Add AFD_CONF
+#    sbezawad   11/17/15 - Bug 21919798: Add cluster properties to clscfg
+#    bbeelamk   08/18/15 - Set crsdeconfig log loc to dchome during deinstall
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#    jmarcias   07/24/15 - Fix bug 21492602
+#    jmarcias   07/21/15 - Fix bug 21471669
+#    jmarcias   06/16/15 - Fix bug 21256573
+#    muhe05/08/15 - Fix bug 21039599
+#    luoli      04/26/15 - Remove redundant parameter NODELIST
+#    jmarcias   03/11/15 - Fix bug 20569941
+#    xyuan      12/16/14 - Fix bug 20206616
+#    xyuan      11/25/14 - Application Cluster
+#    bbeelamk   11/03/14 - Fix bug 19849644
+#    luoli      11/24/13 - write ckpts in ocr
+#    rdasari    06/27/13 - add PING_TARGETS
+#    rdasari    02/14/13 - XbranchMerge rdasari_bug-16101138_1 from
+#st_has_12.1.0.1
+#    rdasari    01/11/13 - disable security bug fix 9584563
+#    rdasari    09/13/12 - add GNS_TYPE
+#    rdasari    09/12/12 - remove auto node parameters
+#    rtamezd    09/12/12 - Fix bug 14115195
+#    sidshank   07/09/12 - add LISTENER_USERNAME.
+#    sidshank   02/07/12 - Remove OCFS_CONFIG param
+#    xesquive   01/24/12 - bug fix 13623926
+#    sidshank   11/01/11 - Add MGMT_DB parameter.
+#    rtamezd    09/09/11 - HUB, RIM, and AUTO_NODE_VIPS for 12g
+#    xyuan      07/19/11 - BC parameters for 12c
+#    rdasari    05/26/11 - add new params
+#    ksviswan   09/03/10 - XbranchMerge ksviswan_bug-9723529 from st_has_11.2.0
+#    dpham      05/20/10 - XbranchMerge dpham_bug-8609692 from st_has_11.2.0.1.0
+#    dpham      03/17/10 - Add TZ variable (9462081
+#    sujkumar   01/31/10 - CRF_HOME as ORACLE_HOME
+#    sujkumar   01/05/10 - Double quote args
+#    dpham      11/25/09 - Remove NETCFGJAR_NAME, EWTJAR_NAME, JEWTJAR_NAME,
+#SHAREJAR_NAME, HELPJAR_NAME, and EMBASEJAR_NAME
+#    sukumar    11/04/09 - Fix CRFHOME. Add CRFHOME2 for Windows.
+#    anutripa   10/18/09 - Add CRFHOME for IPD/OS
+#    dpham      03/10/09 - Add ORACLE_BASE
+#    dpham      11/19/08 - Add ORA_ASM_GROUP
+#    khsingh    11/13/08 - revert ORA_ASM_GROUP for automated sh
+#    dpham      11/03/08 - Add ORA_ASM_GROUP
+#    ppallapo   09/22/08 - Add OCRID and CLUSTER_GUID
+#    dpham      09/10/08 - set OCFS_CONFIG to sl_diskDriveMappingList
+#    srisanka   05/13/08 - remove ORA_CRS_HOME, ORA_HA_HOME
+#    ysharoni   05/07/08 - NETWORKS fmt change s_networkList->s_finalIntrList
+#    srisanka   04/14/08 - ASM_UPGRADE param
+#    hkanchar   04/02/08 - Add OCR and OLRLOC for windows
+#    ysharoni   02/15/08 - bug 6817375
+#    ahabbas    02/28/08 - temporarily remove the need to instantiate the
+#OCFS_CONFIG value
+#    srisanka   02/12/08 - add OCFS_CONFIG param
+#    srisanka   01/15/08 - separate generic and OSD params
+#    jachang    01/15/08 - Prepare ASM diskgroup parameter (commented out)
+#    ysharoni   12/27/07 - Static pars CSS_LEASEDURATION and ASM_SPFILE
+#    yizhang    12/10/07 - Add SCAN_NAME and SCAN_PORT
+#    ysharoni   12/14/07 - gpnp work, cont-d
+#    jachang    11/30/07 - Adding votedisk discovery string
+#    ysharoni   11/27/07 - Add GPnP params
+#    srisanka   10/18/07 - add params and combine crsconfig_defs.sh with this
+#file
+#    khsingh    12/08/06 - add HA parameters
+#    khsingh    12/08/06 - add HA_HOME
+#    khsingh    11/25/06 - Creation
+# ==========================================================
+# Copyright (c) 2001, 2017, Oracle and/or its affiliates. All rights reserved.
+#
+# crsconfig_params.sbs -
+#
+# Note:
+# Either have the installer instantiate the new variable or temporarily
+# skip the validation for the new variable when adding a new one to
+# the parameter file, otherwise the root script would abort due to no
+# value set for the parameter and that would break many things
+# ==========================================================
+
+SILENT=true
+ORACLE_OWNER=grid
+ORA_DBA_GROUP=oinstall
+ORA_ASM_GROUP=asmadmin
+LANGUAGE_ID=AMERICAN_AMERICA.AL32UTF8
+TZ=Asia/Kolkata
+ISROLLING=true
+REUSEDG=false
+USER_IGNORED_PREREQ=true
+INSTALL_NODE=droradbdr01.idbibank.com
+
+#LISTENER_USERNAME=
+LISTENER_USERNAME=grid
+MGMT_DB=false
+GIMR_CONFIG=
+GIMR_CREDENTIALS=
+
+BIG_CLUSTER=true
+HUB_SIZE=32
+HUB_NODE_LIST=droradbdr01,droradbdr02
+RIM_NODE_LIST=
+HUB_NODE_VIPS=droradbprvip01.idbibank.com,droradbprvip02.idbibank.com
+PING_TARGETS=
+
+ORACLE_HOME=/u01/app/19.3/grid
+ORACLE_BASE=/u01/app/oracle
+OLD_CRS_HOME=
+
+JREDIR=/u01/app/19.3/grid/jdk/jre/
+JLIBDIR=/u01/app/19.3/grid/jlib
+
+CLUSTER_TYPE=DB
+VNDR_CLUSTER=false
+OCR_LOCATIONS=
+CLUSTER_NAME=apdr-cls
+NODE_NAME_LIST=droradbdr01,droradbdr02
+PRIVATE_NAME_LIST=
+VOTING_DISKS=
+#VF_DISCOVERY_STRING=%s_vfdiscoverystring%
+
+# ASM consts
+ASM_UPGRADE=false
+ASM_SPFILE=
+ASM_DISCOVERY_STRING=/dev/oracleasm/disks/*
+ASM_CONFIG=near
+ASM_CREDENTIALS=
+ASMCA_ARGS=
+
+CRS_STORAGE_OPTION=1
+CSS_LEASEDURATION=400
+CRS_NODEVIPS='droradbprvip01.idbibank.com//eno7,droradbprvip02.idbibank.com//eno7'
+NETWORKS="eno7"/255.255.252.0:public,"eno8"/255.255.252.0:asm,"eno8"/255.255.252.0:cluster_interconnect
+SCAN_NAME=droradbprscan.idbibank.com
+SCAN_PORT=15210
+GPNP_PA=
+SCAN_TYPE=LOCAL
+SCAN_CREDENTIALS=
+
+# AFD consts
+AFD_CONF=false
+
+# RHP constsCRS_NODEVIPS='droradbprvip01.idbibank.com/-- INSERT --2/eno7,droradbprvip02.idbibank.com//eno7'5/eno7,droradbprvip02.idbibank.com//eno7'5/eno7,droradbprvip02.idbibank.com//eno7'./eno7,droradbprvip02.idbibank.com//eno7'2/eno7,droradbprvip02.idbibank.com//eno7'5/eno7,droradbprvip02.idbibank.com//eno7'5/eno7,droradbprvip02.idbibank.com//eno7'./eno7,droradbprvip02.idbibank.com//eno7'2/eno7,droradbprvip02.idbibank.com//eno7'5/eno7,droradbprvip02.idbibank.com//eno7'2/eno7,droradbprvip02.idbibank.com//eno7'./eno7,droradbprvip02.idbibank.com//eno7'0/eno7,droradbprvip02.idbibank.com//eno7'/eno7,droradbprvip02.idbibank.com//e2/eno7'5/eno7'5/eno7'./eno7'2/eno7'5/eno7'5/eno7'./eno7'2/eno7'5/eno7'2/eno7'./eno7'0/eno7'0.0:public,"eno8"/255.255.252.0:asm,"eno8"/255.255.252.0:cluster_interconnect.0:public,"eno8"/255.255.252.0:asm,"eno8"/255.255.252.0:cluster_interconnect.0:public,"eno8"/255.255.252.0:asm,"eno8"/255.255.252.0:cluster_interconnect0:public,"eno8"/255.255.252.0:asm,"eno8"/255.255.252.0:cluster_interconnect.0:public,"eno8"/255.255.252.0:asm,"eno8"/255.255.252.0:cluster_interconnect.0:public,"eno8"/255.255.252.0:asm,"eno8"/255.255.252.0:cluster_interconnect.0:public,"eno8"/255.255.252.0:asm,"eno8"/255.255.252.0:cluster_interconnect0:public,"eno8"/255.255.252.0:asm,"eno8"/255.255.252.0:cluster_interconnect.0:public,"eno8"/255.255.252.0:asm,"eno8"/255.255.252.0:cluster_interconnect.0:public,"eno8"/255.255.252.0:asm,"eno8"/255.255.252.0:cluster_interconnect.0:public,"eno8"/255.255.252.0:asm,"eno8"/255.255.252.0:cluster_interconnect1.0:public,"eno8"/255.255.252.0:asm,"eno8"/255.255.252.0:cluster_interconnect0.0:public,"eno8"/255.255.252.0:asm,"eno8"/255.255.252.0:cluster_interconnect..0:public,"eno8"/255.255.252.0:asm,"eno8"/255.255.252.0:cluster_interconnect1.0:public,"eno8"/255.255.252.0:asm,"eno8"/255.255.252.0:cluster_interconnect7.0:public,"eno8"/255.255.252.0:asm,"eno8"/255.255.252.0:cluster_interconnect2.0:public,"eno8"/255.255.252.0:asm,"eno8"/255.255.252.0:cluster_interconnect..0:public,"eno8"/255.255.252.0:asm,"eno8"/255.255.252.0:cluster_interconnect1.0:public,"eno8"/255.255.252.0:asm,"eno8"/255.255.252.0:cluster_interconnect9.0:public,"eno8"/255.255.252.0:asm,"eno8"/255.255.252.0:cluster_interconnect.0:public,"eno8"/255.255.252.0:asm,"eno8"/255.255.252.0:cluster_interconnect.0:asm,"eno8"/255.255.252.0:cluster_interconnect.0:asm,"eno8"/255.255.252.0:cluster_interconnect0:asm,"eno8"/255.255.252.0:cluster_interconnect.0:asm,"eno8"/255.255.252.0:cluster_interconnect.0:asm,"eno8"/255.255.252.0:cluster_interconnect.0:asm,"eno8"/255.255.252.0:cluster_interconnect0:asm,"eno8"/255.255.252.0:cluster_interconnect.0:asm,"eno8"/255.255.252.0:cluster_interconnect.0:asm,"eno8"/255.255.252.0:cluster_interconnect.0:asm,"eno8"/255.255.252.0:cluster_interconnect1.0:asm,"eno8"/255.255.252.0:cluster_interconnect0.0:asm,"eno8"/255.255.252.0:cluster_interconnect..0:asm,"eno8"/255.255.252.0:cluster_interconnect1.0:asm,"eno8"/255.255.252.0:cluster_interconnect7.0:asm,"eno8"/255.255.252.0:cluster_interconnect2.0:asm,"eno8"/255.255.252.0:cluster_interconnect..0:asm,"eno8"/255.255.252.0:cluster_interconnect1.0:asm,"eno8"/255.255.252.0:cluster_interconnect6.0:asm,"eno8"/255.255.252.0:cluster_interconnect.0:asm,"eno8"/255.255.252.0:cluster_interconnect.0:cluster_interconnect.0:cluster_interconnect0:cluster_interconnect.0:cluster_interconnect.0:cluster_interconnect.0:cluster_interconnect0:cluster_interconnect.0:cluster_interconnect.0:cluster_interconnect.0:cluster_interconnect1.0:cluster_interconnect0.0:cluster_interconnect..0:cluster_interconnect1.0:cluster_interconnect7.0:cluster_interconnect2.0:cluster_interconnect..0:cluster_interconnect1.0:cluster_interconnect6.0:cluster_interconnect.0:cluster_interconnect:wq"crsconfig_params" 232L, 7609C written
+[root@droradbdr01 install]# 
+[root@droradbdr01 install]# 
+[root@droradbdr01 install]# pwd
+/u01/app/19.3/grid/crs/install
+[root@droradbdr01 install]# cd
+[root@droradbdr01 ~]# 
+[root@droradbdr01 ~]# /u01/app/19.3/grid/root.sh
+Check /u01/app/19.3/grid/install/root_droradbdr01_2021-11-18_17-26-54-723086910.log for the output of root script
+[root@droradbdr01 ~]# 
+[root@droradbdr01 ~]# 
+[root@droradbdr01 ~]# timed out waiting for input: auto-logout
+[monitor@droradbdr01 ~]$ timed out waiting for input: auto-logout
