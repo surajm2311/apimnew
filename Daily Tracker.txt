@@ -7,3 +7,7 @@ Redhat cockpit -- Ramandeep   /data/redmine/log/
 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
 
 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
+
+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
+
+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
